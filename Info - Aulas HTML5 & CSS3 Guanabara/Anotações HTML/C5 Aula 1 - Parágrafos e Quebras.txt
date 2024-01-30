@@ -1,0 +1,12 @@
+
+                          Capítulo 5 Aula 1
+
+-- Para fazer quebras de linha é só utilizar a tag "<br>"
+
+-- Para fazer aparecer os símbolos "<>" sem criar tags no script, basta    utilizar " &lt; " para "<" e " &gt; " para ">"
+
+-- "br" significa break row
+
+-- Um &lt; estamos pedindo para colocar o símbolo menor que (less than)
+
+-- Um &gt; estamos pedindo para colocar o símbolo maior que (greater than)

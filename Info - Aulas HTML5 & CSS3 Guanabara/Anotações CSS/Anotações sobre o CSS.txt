@@ -1,0 +1,219 @@
+
+                                                         
+                                              ==  PSEUDO-CLASSES E PSEUDO-ELEMENTOS  ==
+
+
+==> # = id
+==> .  = class
+==> :  = pseudo - class
+==> :: = pseudo - element
+==> > = children (filho)
+
+
+Sintaxe:
+
+Para utilizar um pseudo-elemento basta declarar o seletor seguido pelo pseudo-elemento desejado. Logo após, da mesma forma que é feito com qualquer regra CSS, podemos definir as propriedades a ele relacionadas.
+
+Sintaxe de declaração de um pseudo-elemento:
+
+        [seletor]::pseudo-elemento { 
+                propriedade : valor; 
+        }
+
+
+todos os pseudo-elementos do CSS:
+
+::first-line, ::first-letter, ::before, ::after e ::selection
+
+
+ ::first-line =
+O pseudo-elemento ::first-line é utilizado quando desejamos customizar o conteúdo apresentado na primeira linha de um elemento. Assim, podemos estilizar esse fragmento de texto de forma independente, aplicando, por exemplo, um tamanho de fonte diferente.
+
+ ::first-letter =
+O pseudo-elemento ::first-letter nos permite selecionar a primeira letra do conteúdo de um elemento. Usamos esse recurso quando desejamos destacar essa letra alterando seu tamanho e sua cor, por exemplo.
+
+ ::before =
+A declaração do pseudo-elemento ::before em um seletor cria um falso elemento que nos permite adicionar conteúdo antes do conteúdo do elemento selecionado.
+
+ ::after =
+Assim como ::before, o pseudo-elemento ::after também cria um falso elemento que nos permite adicionar conteúdo ao elemento selecionado, mas desta vez no final dele.
+
+ ::selection =
+O pseudo-elemento ::selection é utilizado para selecionar o conteúdo de um elemento e, a partir disso, customizar algumas propriedades dessa área, como a cor de fundo e do texto.
+
+
+Para saber mais sobre Pseudo-Elementos e Pseudo-Classes acesse os links abaixo:
+
+==> PSEUDO-CLASSES 
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+==> PSEUDO-ELEMENTOS
+https://www.devmedia.com.br/css-conheca-os-pseudo-elementos/38183
+
+
+                                                          
+                                                            ==  MODELO DE CAIXAS  ==
+
+
+O que é uma caixa?
+
+De forma simples e objetiva, baseado em um conceito chamado “box model”, a grande maioria dos elementos HTML que temos no nosso site são como caixas. Elas são containers que armazenam conteúdos ou até mesmo outras caixas. 
+
+
+Anatomia de uma caixa:
+
+Vamos analisar como uma caixa vai ser apresentada por todos os navegadores. Olhe atentamente o PDF Modelos de caixas na página 3, lá tem um diagrama, que é exatamente o já citado Box model:
+
+
+Tipos de Caixa:
+
+==> CAIXA DO TIPO BLOCK-LEVEL:
+
+Um elemento dito block-level sempre vai se iniciar em uma nova linha e vai ocupar a
+largura total do elemento onde ele está contido. Se não estiver contido em nenhuma
+outra caixa, ele vai ocupar 100% da largura do <body>.
+
+O elemento block-level mais conhecido é o <div> e suas variações semânticas
+modernas da HTML5, como <main>, <section>, <aside>, etc.
+
+Na lista a seguir, coloquei alguns elementos HTML que são block-level:
+
+==>  <address>  <article>  <aside>  <blockquote>  <canvas>  <dd>  <div>  <dl>  <dt>  <fieldset> 
+
+==>  <figcaption>  <figure>  <footer>  <form>  <h1> - <h6>  <header>  <hr>  <li>  <main>  <nav>  
+
+==>  <noscript>  <ol>  <p>  <pre>  <section>  <table>  <tfoot>  <ul>  <video>
+
+
+==> CAIXA DO TIPO INLINE-LEVEL:
+
+Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto
+exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao
+seu conteúdo.
+
+Abaixo, listei alguns elementos inline-level usados pela HTML:
+
+==>  <a>  <abbr>  <acronym>  <b>  <bdo>  <br>  <button>  <cite>  <code>  <dfn>  <em>  <i>
+
+==>  <img>  <input>  <kbd>  <label>  <map>  <object>  <output>  <q>  <samp>  <script>  <select>  
+==>  <small>  <span>  <strong>  <sub>  <textarea>  <tt>  <var>
+
+
+
+                                         ==  ORDEM DE CONFIGURAÇÃO DAS CAIXAS  ==
+
+
+==> BORDA E CONTORNO PERSONALIZADOS:
+
+
+As configurações de border e outline também possuem shorthands para simplificar o código anterior.
+
+A ordem para as duas configurações é sempre a mesma para as duas shorthands: 
+
+==> Border e outline -> largura (-width), estilo (-style) e cor (-color).
+Ex ==>  border: 20px solid blue;
+Ex ==>  outline: 20px dashed red;
+
+
+==> PREENCHIMENTO E MARGEM PERSONALIZADOS:
+
+
+Todo elemento de caixa possui quatro valores para padding e quatro para margin, sempre nessa mesma ordem: 
+
+==> superior (-top), direita (-right), inferior (-bottom),esquerda (-left). 
+
+Ex ==> padding: 10px 5px 15px 5px;
+Ex ==> margin: 10px 5px 15px 5px;
+
+Quando colocamos um único valor de dimensão para o preenchimento ou margem, esse mesmo 
+valor é aplicado simetricamente a todas as direções.
+
+Ex ==> padding: 10px;
+Ex ==> margin: 10px;
+
+Também existe a opção de indicar cada shorthand das propriedades de preenchimento
+e borda usando apenas duas medidas:
+
+Essa simplificação só é possível quando as medidas -top e -bottom forem iguais entre si e o mesmo também ocorrer entre as medidas -right e -left.
+
+Ex ==> padding: 10px 5px;
+Ex ==> margin: 10px 5px;
+
+
+==> MARGENS NO AUTOMÁTICO
+
+
+Um recurso que também vai ser muito usado em nossos exercícios é a centralização de blocos. 
+
+Para que isso seja feito, devemos pedir que o navegador calcule automaticamente as margens da
+esquerda e da direita para que o bloco seja colocado no meio do navegador, independente do tamanho da janela.
+
+Para centralizar uma caixa, use a seguinte declaração no seu seletor:
+
+==> margin: auto;
+
+
+
+                                                        ==  SOMBRAS NAS CAIXAS  ==
+
+
+Para adicionarmos sombras nas caixas basta colocar a propriedade box-shadow e seus quatro valores. 
+A ordem é sempre essa: 
+
+1. Deslocamento horizontal (h-offset): quanto a sombra vai andar para o lado
+direito (valores negativos causam deslocamento para a esquerda)
+2. Deslocamento vertical (v-offset): quanto a sombra vai andar para baixo (valores
+negativos causam deslocamento para cima)
+3. Embaçamento (blur): quanto a sombra vai se espalhar pelo fundo
+4. Cor (color): cor da sombra. É possível usar transparência.
+
+
+
+                                                       ==  BORDAS DECORADAS  ==
+
+
+Vértices arredondados:
+
+Podemos arredondar os vértices usando uma declaração simples usando a
+propriedade "border-radius".
+
+==> border-radius: 10px;
+
+Na declaração acima, todos os vértices serão levemente arredondados (10px) de
+forma simétrica. Se for necessário, podemos indicar quatro medidas diferentes, uma
+para cada vértice, como está abaixo:
+
+==> border-radius: 10px 20px 30px 40px;
+
+também é possível indicar apenas dois valores, o que vai agir em vértices intercalados, 
+partindo do canto superior esquerdo.
+
+border-radius: 10px 30px
+
+
+
+                                                        ==  VARIÁVEIS EM CSS  ==
+
+
+:root {
+    - - color0: #
+    - - color1:
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

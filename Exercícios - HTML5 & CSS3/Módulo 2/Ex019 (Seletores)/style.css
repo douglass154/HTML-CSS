@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+/* 
+    Em HTML é id = Em CSS é #
+    Em HTML é class = Em CSS é .
+*/
+
+body {
+    background-color: #ECE3CE;
+    font-family: 'Rubik', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+/* div {
+    background-color: #f7f8e9;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #a79772;
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+} */
+
+div#HTML {
+    background-color: #F7F8E9;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #a79772;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+div#CSS {
+    background-color: #F7F8E9;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #a79772;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #7c9b7a;
+    font-weight: 800;
+}
+
+h1 {
+    color: #3A4D39;
+    text-align: center;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.basico {
+    color: #4F6F52;
+}
+
+.intermediario {
+    color: #a19f23;
+}
+
+.avançado {
+    color: #a13623;
+}

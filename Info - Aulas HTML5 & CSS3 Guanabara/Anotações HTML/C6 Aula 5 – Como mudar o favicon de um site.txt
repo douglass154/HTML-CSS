@@ -1,0 +1,11 @@
+
+                         Capítulo 6 Aula 5
+
+         == Sites para pegar/criar icones para fivecon ==
+
+-- fivecon.io
+-- fivecon.cc
+-- iconarchive.com
+
+
+== Para adicionar o fivecon no código basta digitar "link" e escolher    "link:fivecon"

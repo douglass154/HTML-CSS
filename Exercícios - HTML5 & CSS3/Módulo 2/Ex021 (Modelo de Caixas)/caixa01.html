@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+        body {
+            padding: 7px;
+            margin: auto;
+        }
+
+        h1{ /* block-level */
+            font-family: 'Rubik', Verdana, Arial, Helvetica, sans-serif;
+            font-size: 1.7em;
+            text-align: center;
+            padding: 5px 5px 5px 5px;
+            border: 13px inset slategray;
+            margin: auto;
+            outline: 5px dashed darkmagenta;
+        }
+
+        p {
+            font-family: 'Rubik', Verdana, Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            margin: 12px 0px 8px 0px;
+        }
+
+        a {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+            border: 3px solid darkblue;
+            padding: 0px 4px;
+        }
+
+        p > a:hover {
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Exemplo de caixa box-level</h1>
+
+    <p>Parágrafos também são exemplos de box-level,mas os <a href="#">links são exemlos de caixas inline-level</a>. Vamos ver como isso funciona.</p>
+
+</body>
+</html>

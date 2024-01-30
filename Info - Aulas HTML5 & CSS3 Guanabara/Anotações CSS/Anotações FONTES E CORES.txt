@@ -1,0 +1,189 @@
+
+                                                          ==  CÍRCULO CROMÁTICO  ==
+
+
+  Cores Primárias = 
+==> Azul, Amarelo e Vermelho
+
+
+  Da junção das cores primárias, temos as três cores secundárias que são = 
+==> Laranja (amarelo + vermelho), Violeta/Roxo (Azul + Vermelho) e o Verde (Azul + Amarelo)
+
+
+  Da junção de uma cor primária com uma secundária, temos as seis cores terciárias =
+
+==> Amarelo-esverdeado (amarelo+verde)
+==> Amarelo-alaranjado (amarelo+laranja)
+==> Vermelho-alaranjado (vermelho+laranja)
+==> Vermelho-arroxeado (vermelho+roxo)
+==> Azul-arroxeado (azul+roxo)
+==> Azul-esverdeado (azul+verde)
+
+(Note: Cores terciárias são representadas primeiro pelo nome das cores primárias (amarelo) e logo em seguida representada por uma cor secundária (verde), ficando amarelo-esverdeado)
+
+
+                                                           ==  TEMPERATURA DE CORES  ==
+
+
+  Cores Frias: estão associadas a sensações mais calmas, de frescor e tranquilidade =
+==> Amarelo-esverdeado, Verde, Azul-esverdeado, Azul, Azul-arroxeado e Roxo
+
+
+  Cores Quentes: As cores quentes, criam uma sensação de calor e proximidade =
+==>  Amarelo, Amarelo-alaranjado, Laranja, Vermelho-alaranjado, Vermelho e Vermelho-arroxeado
+
+
+                                                           ==  CORES COMPLEMENTARES  ==
+
+
+São aquelas que apresentam o maior contraste entre si. Elas estão localizadas do lado imediatamente oposto do círculo cromático.
+
+Se pegarmos qualquer cor primária, a sua cor complementar é sempre uma cor secundária. De forma similar, qualquer cor terciária tem uma outra cor terciária como complementar. Quando juntamos duas  cores complementares, sempre obtemos o cinza.
+
+
+                                                                ==  CORES ANÁLOGAS  ==
+
+
+Diferente das cores complementares, que estão do lado extremo oposto no círculo cromático, as cores análogas são aquelas que são imediatamente vizinhas entre si. 
+
+Por serem cores consecutivas, as cores análogas possuem um baixo contraste entre elas, mas criam uma bela harmonia quando combinadas em um mesmo design.
+
+
+-------------------->  ATENÇÃO SE QUISER SABER MAIS OLHE O PDF DO CÍRCULO CROMÁTICO  <----------------------
+
+
+Ferramentas úteis para fazer paletas de cores =
+==> Adobe color
+==> Paletton.com
+==> Coolors
+
+
+                                                    ==  CARACTERÍSTICAS DAS FONTES  ==
+
+Vamos analisar cada uma das partes de um tipo. Volte sempre que precisasr, para o PDF "Tudo sobre Fontes" para ler a descrição de cada elemento das fontes, lá tem a foto das letras em "Anatomia do Tipo":
+
+Componentes anatômicos geométricos:
+
+==> Serifa (Esse é importante)
+==> Arco
+==> Terminal
+==> Haste
+==> Esporão
+==> Vértice
+==> Filete
+
+Componentes anatômicos corporal:
+
+==> Braço
+==> Perna
+==> Pé
+==> Espinha
+==> Barriga
+==> Olho
+==> Orelha
+==> Cauda
+
+
+                                                 ==  MEDIDAS DE TAMANHO DAS FONTES  ==
+
+
+Medidas Absolutas:
+
+==> cm (centímetro)
+==> mm (milímetro)
+==> in (polegada)
+==> px (pixel)
+==> pt (ponto)
+==> pc (paica)
+
+Medidas Relativas:
+
+==> em (o melhor)
+==> ex
+==> rem
+==> vw 
+==> vh
+==> % 
+
+Para medidas de fonte é recomendável utilizar apenas "px" e "em" MAS o 
+"em" é o melhor
+(Note: 16px geralmente é = 1em)
+
+
+                                                             ==  PESO DAS FONTES  ==
+
+
+Para definir o peso das fontes no CSS utilize a propriedade "font-weight"
+
+
+Os valores a ser definidos no tamanho são:
+
+==> Lighter
+==> Normal
+==> Bold
+==> Bolder
+==> 100 -> 200 -> 300 -> ... 900
+
+
+Uma propriedade para se utilizar e colocar todos os valores em uma única linha, a propriedade é "font"
+Coloque os valores nesta ordem, é obrigatório esta ordem:
+
+==> font-style  ->  font-weight  ->  font-size  ->  font-family
+
+==> Exemplo: (==> font: italic bolder 2em Helvetica, sans - serif;)
+
+
+                                                      ==  FONTES EXTERNAS BAIXADAS  ==
+
+
+Para linkar a fonte baixada no seu CSS, utillize a regra "@font-face". Isso irá criar um:
+
+font-family:
+src: url()
+
+dentro de "src: url()" coloque os nomes identicos da fonte como está no arquivo e com os mesmos espaçamentos e vírgulas que estiverem logo abaixo, exemplo:
+
+font-family:
+src: url('') format('')
+
+Como no exemplo abaixo:
+
+@font-face {
+    font-family: 'upheav';
+    src: url('fonts/upheavtt.ttf') format('truetype'), url('fonts/Upheaval.fon') format('fon');
+
+
+ Tipos de format()
+
+==> opentype (otf)
+==> truetype (ttf)
+==> embedded-opentype
+==> truetype-aat (Apple Advanced Typography)
+==> svg
+
+
+
+                                       ==  SITES PARA IDENTIFICAR FONTES EM IMAGENS  ==
+
+
+==> Whatfontis.com
+==> Fontsquirrel.com
+==> myfonts.com
+
+
+                                                   ==  SITES PARA ENCONTRAR FONTES  ==
+
+
+==> Googlefonts.com
+==> dafont.com
+
+
+
+
+
+
+
+
+
+
+

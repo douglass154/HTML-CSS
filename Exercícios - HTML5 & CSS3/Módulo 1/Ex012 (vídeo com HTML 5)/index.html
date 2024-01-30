@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML 5</title>
+</head>
+
+<body>
+    <h1>
+        Inserindo vídeos hospedados localmente.
+    </h1>
+    <p>
+        Estes vídeos estam hospedados no meu próprio servidor.
+    </p>
+
+    <video src="midia/piscina.mkv" width="800" height="500" preload="metadata" controls autoplay loop></video>
+
+    <video preload="metadata" width="800" height="500" controls autoplay loop>
+        <source src="midia/biquini.mp4" type="video/mp4">
+        <source src="midia/biquini.mkv" type="video/mp4">
+        <source src="midia/biquini.webm" type="video/webm">
+        <source src="midia/biquini.ogv" type="video/ogg">
+        <p>
+            Sinto muito mas seu navegador não suporta arquivos de vídeo tipo mp4,<a href="midia/biquini.mp4">clique aqui</a> para fazer o download do vídeo.
+        </p>
+    </video>
+
+    <audio preload="metadata" controls>
+        <source src="música/Simple - Patrick Patrikios.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Agora abaixo temos um vídeo que foi inserido externamente(Youtube)</h1>
+
+    <iframe width="800" height="500" src="https://www.youtube.com/embed/d_qGO4GrbQM?si=7QUZ5H8eaepjLAu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

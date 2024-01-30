@@ -1,0 +1,216 @@
+
+                                                                              == Tags HTML ==
+
+  del = 
+Marca um texto como excluído para indicar que ele deve ser lido, mas não considerado
+
+  mark = 
+cria texto marcado (como um marca texto)
+
+  strong = 
+para textos em negrito
+
+  p =
+A tag "p" é utilizada para demarcar um parágrafo. O elemento HTML < p > (ou Elemento HTML Parágrafo) representa um parágrafo do texto.
+Posso colocar um espaçamento no ínicio do parágrafo chamado a propriedade CSS "text-indent" que especifica a quantidade de recuo (espaço vazio) que é colocado antes de linhas de texto em um bloco.
+
+  em = 
+Texto em ênfase
+
+  ins = 
+marca um texto como inserido para dar uma ênfase e indicar que ele foi adicionado depois.
+
+  sup = 
+Para inserir coisas do tipo: x elevado a 20, 2 elevado a 2
+
+  sub = 
+Para inserir coisas do tipo: H₂O (números ou letras subscritos)
+
+  code = 
+para deixar um fonte monoespaçada ( tipografia em que todos os caracteres têm a mesma largura, criando uma aparência uniforme)
+
+  pre = 
+Um texto dentro desse elemento é tipicamente exibido em uma fonte não proporcional da mesma maneira em que o texto original foi disposto no código. Espaços em branco são mantidos no texto da mesma forma em que este foi digitado.
+
+  q = 
+indica que o texto dentro da tag é uma pequena citação. Exemplo: Como diria o pai de um amigo do Guanabara: <q>o computador é um burro muito rápido</q>
+
+  blockquote = 
+O Elemento HTML <blockquote> (citação de bloco), indica que o texto incluído é uma longa citação.
+
+  cite =
+Dentro da tag <blockquote> pode-se adicionar o elemento <cite> que representa uma referência a um trabalho artístico. Deve incluir o título do trabalho ou uma URL de referência.
+
+  abbr = 
+O Elemento HTML <abbr> (ou Elemento de Abreviação HTML) representa uma abreviação e opcionalmente fornece uma descrição completa para ela.
+
+  ul = 
+A tag <ul> (unordered list) é usada para definir uma lista não ordenada e a tag <li> é usada para cada item da lista.
+
+  ol = 
+A tag <ol> (ordered list) é usada para definir uma lista ordenada e a tag <li> é usada para cada item da lista.
+
+  dt = 
+O elemento HTML <dt> (ou Elemento HTML de Definição de Termo) identifica um termo na lista de definição. Este elemento pode ocorrer somente dentro de uma tag <dl> . Geralmente seguido por um elemento <dd> ; ou multiplos <dt> na mesma linha indicam vários termos sendo definidos pelo próximo element <dd>.
+
+  dd =
+O elemento HTML <dd> fornece detalhes ou uma definição mais completa do termo precedente (definido por <dt> ) numa lista de descrições ( <dl> ).
+
+  a = 
+O elemento <a> em HTML (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL. O conteúdo dentro de cada <a>   precisará indicar o destino do link.
+
+  (Note 1: Dentro do código <a href=""></a> , coloque as tags taget="_blank" e rel="" para abrir o link em uma guia diferente da do seu site).
+  (Note 2: Usar a tag rel="noreferrer noopener" evita "exploit" para window.openerAPI e evita que o desempenho de sua página fique pior caso o site externo use JavaScript)
+  (Note 3: Usar a tag rel="next" e rel="prev" para links internos, "next" para links que levam para a próxima página e "prev" para links que levam a páginas anteriores)
+  (Note 4: Usar a tag rel="nofollow" para links externos, o atributo nofollow diz aos mecanismos de busca do Google para não seguirem algum link externo que esteja sendo marcado — o que é basicamente dizer que o site não   recomenda o link.)
+
+
+
+                                                                        ==  TAGS PARA IMAGENS ==
+
+  picture =
+O elemento HTML <picture> é um container usado para especificar múltiplos elementos **<source: media: type>** para um elemento específico <img> contido nele.  Permitindo carregar diferentes arquivos de imagem através de: Media Queries, para diferentes resoluções e orientações de tela. Densidade de pixels, para diferentes tipos de dispositivos.
+
+  img =
+O elemento **HTML <img> **(ou HTML Image Element) representa a inserção de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento <figure> e <figcaption> .
+
+  source =
+O elemento source é utilizado para especificar múltiplos recursos de mídia de elementos <picture> , <audio> ou <video> em HTML5.
+(Note 1: adicionar <source: media: type> para colocar diferentes tamanhos de imagens, em ordem do menor para o maior, (ex: 300px, 700px, 1000px)  para a imagem se adaptar a diferentes tamanhos de tela
+
+
+
+                                                                       ==  TAGS PARA AÚDIOS ==
+
+  audio =
+O elemento audio é utilizado para embutir conteúdo de som em um documento HTML ou XHTML.
+
+  (Note 1: adicionar <source: src> para colocar mais formatos de aúdios, como mp3, ogg e wav, (obs: não utilizar o formato wav, pois é muito pesado) por que alguns navegadores não tem compatibilidade com arquivos mp3.)
+
+  volume =
+Especifica a configuração de volume inicial do elemento de áudio, em um intervalo de 0,0 a 1,0.
+
+  preload = Solicita um comportamento de pré-carregamento específico para o navegador, que o navegador pode ou não seguir.
+
+  (Note 1: preload="auto" neste o navegador acha que deve carregar todo o arquivo de aúdio quando o site carregar)
+  (Note 2: preload="metadata" Esse é o melhor e neste o navegador achar que deve carregar apenas metadados (tamanho, tempo, info. de direitos, etc) quando o site carregar)
+  (Note 3: preload="none" neste o navegador acha que NÃO deve carregar  absolutamente nada do arquivo de áudio quando a página carregar, só carregará quando a pessoa clicar no botão de play.)
+
+  muted = Especifica que o volume do reprodutor de áudio deve inicialmente ser silenciado.
+
+  loop = Especifica que o conteúdo de áudio deve ser repetido indefinidamente após o início da reprodução.
+
+  controls = Alterna a exibição dos controles de reprodução de áudio.
+
+  autoplay = Especifica que a reprodução do áudio deve começar imediatamente no carregamento da página.
+
+  src = Especifica o arquivo de origem de um elemento de áudio. (URL)
+
+                                  
+
+                                                                         ==  TAGS PARA VÍDEOS ==
+
+                                                  Formatos de aquivos de vídeo: mp4/m4v, ogv e WebM
+
+  video = 
+A <video> tag é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.
+A <video> tag contém uma ou mais <source> tags com diferentes fontes de vídeo. O navegador escolherá a primeira fonte compatível.
+(Note 1: adicionar <source: src> para colocar mais formatos de vídeos, como mp4, mkv, ogg e WebM, por que alguns navegadores não tem compatibilidade com alguns formatos)
+
+  autoplay =
+O vídeo começará a ser reproduzido assim que estiver pronto
+
+  controls = 
+Especifica que os controles de vídeos devem ser exibidos (como botão de play, pausa, etc)
+
+  height = 
+define a altura do vídeo na página (como um width que define a largura)
+
+  loop = 
+Especifica que o vídeo recomeçará sempre que ele terminar
+
+  muted = 
+Define que o vídeo sempre começará silenciado
+
+  poster = 
+define uma imagem a ser mostrada durante o carregamento do vídeo ou até que o usuário aperte o botão do play
+
+  preload = 
+Especifica se e como o autor acha que o vídeo deve ser carregado quando a página for carregada
+
+  (Note 1: preload="auto" / preload="metadata" / preload="none")
+  (Note 2: preload="metadata" é o melhor)
+
+  src = 
+especifica a URL do arquivo de vídeo
+
+  width =
+Define a largura do player do vídeo (como um height que define a altura)
+
+
+
+                                                         ==  MODULO 2 HTML E CSS  ==
+
+
+                                                   ==  Grouping Tags e Semantic Tags  ==
+
+
+A linguagem HTML padrão tinha apenas duas tags de agrupamento genérico: a <div>
+e a <span>. A diferença básica entre elas é que a primeira é um elemento agrupador
+do tipo block-level e o segundo é inline-level. No mais, eles agem exatamente da
+mesma maneira, servindo para juntar vários outros elementos HTML.
+
+Com o surgimento da HTML5, surgiram as tags semânticas de agrupamento. Isso não
+significa que as <div> e <span> (agora chamadas de não-semânticas) deixaram de
+existir ou ficaram obsoletas, mas seu uso agora faz menos sentido, pois temos tags
+para dividir as partes do nosso documento HTML.
+
+Vamos compreender a partir de agora os principais agregadores semânticos da
+HTML5.
+
+
+==> Header:
+
+Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até
+mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1> - <h6>
+e subtítulos. Podem também conter menus de navegação.
+
+==> Nav:
+
+Define uma área que possui os links de navegação pela estrutura de páginas que vão 
+compor o website. Um <nav> pode estar dentro de um <header>.
+
+==> Main:
+
+É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente 
+concentra as seções, artigos e conteúdos periféricos.
+
+==> Section:
+
+Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou
+dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação
+oficial da W3C, “uma section é um agrupamento temático de conteúdos, tipicamente
+com um cabeçalho”.
+
+==> Article:
+
+Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma
+independente e dizem respeito a um mesmo assunto. Podemos usar um <article>
+para delimitar um post de blog ou fórum, uma notícia, etc.
+
+==> Aside:
+
+Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo
+ou seção. Normalmente um conteúdo <aside> está posicionado ao lado de um
+determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de
+texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”.
+
+==> Footer:
+
+Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte
+diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um
+<aside>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa
+do site, documentos relacionados.
+
+
+

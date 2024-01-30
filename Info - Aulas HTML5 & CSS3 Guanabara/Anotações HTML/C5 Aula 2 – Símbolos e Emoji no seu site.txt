@@ -1,0 +1,22 @@
+                  
+                          Capítulo 5 Aula 2
+
+-- Código para símbolos especiais:
+
+ Marca registada: &reg;
+ Copyright: &copy;
+ Trade Mark: &trade;
+ Seta esquerda: &larr; (left arrow)
+ Seta acima: &uarr; (up arrow)
+ Seta direita: &rarr; (right arrow)
+ Seta baixo: &darr; (down arrow)
+
+-- Outros códigos no PDF do capítulo 5
+
+                      -- Como Adicionar Emojis --
+
+-- Sempre antes de adicionar o Código de um emoji, coloque "&#x" para    informar que é um hexadecímal
+
+-- Se o código do emoji estiver "U+1F494" pegue apenas o 1F494 e no HTML use " &#x1F494; " para colocar o emoji
+
+

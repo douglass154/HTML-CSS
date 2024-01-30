@@ -1,0 +1,13 @@
+
+                                                                              == Códigos e Dicas ==
+
+-- Aperte Ctrl + Shift + P e escreva "abb", depois clique em Wrap with abbreviation, para colocar algo entre uma tag sem ter que excluir a frase ou move-la.
+
+
+-- Site para achar "media types": https://www.iana.org/assignments/media-types/media-types.xhtml
+
+
+-- Para adicionar vídeos externos, use o Youtube ou o Vimeo. no youtube clique em compartilhar>incorporar, e no vimeo clique em campartilhar apenas.
+
+
+- Site para criar um esbolço dos templates de sites: mockflow.com
