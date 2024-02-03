@@ -203,8 +203,12 @@ border-radius: 10px 30px
 
 
 
+                                                     ==  IMAGEM DE FUNDO NO SITE  ==
 
 
+Todo elemento que funciona como uma caixa pode receber uma imagem de fundo dentro dele com a declaração "background-image:" , com a função "url()" , ficando:
+
+background-image: url()
 
 
 
