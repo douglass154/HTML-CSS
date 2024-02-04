@@ -189,7 +189,7 @@ para cada vértice, como está abaixo:
 também é possível indicar apenas dois valores, o que vai agir em vértices intercalados, 
 partindo do canto superior esquerdo.
 
-border-radius: 10px 30px
+==> border-radius: 10px 30px
 
 
 
@@ -206,13 +206,33 @@ border-radius: 10px 30px
                                                      ==  IMAGEM DE FUNDO NO SITE  ==
 
 
+Informações sobre as propriedades do background em geral
+==> https://developer.mozilla.org/pt-BR/docs/Web/CSS/background
+
+
 Todo elemento que funciona como uma caixa pode receber uma imagem de fundo dentro dele com a declaração "background-image:" , com a função "url()" , ficando:
 
-background-image: url()
+==> background-image: url();
+
+mais informações sobre "background-image"
+=> https://developer.mozilla.org/en-US/docs/Web/CSS/background-image~
 
 
+A propriedade "background-repeat" é usada para definir como uma imagem de fundo se repete na tela
+
+==> background-repeat: 
+
+mais informações sobre "background-size"
+=> https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat
 
 
+A propriedade "background-size" do CSS define o tamanho da imagem de fundo do elemento. 
+A imagem pode ser deixada no seu tamanho natural, estendida ou comprimida para caber no espaço disponível.
+
+==> background-size:
+
+mais informações sobre "background-size"  
+=> https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-size
 
 
 
