@@ -235,6 +235,14 @@ mais informações sobre "background-size"
 => https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-size
 
 
+A propriedade "background-position" define a posição inicial de uma imagem de fundo. Por padrão, uma imagem de plano de fundo é colocada no canto superior esquerdo de um elemento e repetida tanto verticalmente quanto horizontalmente.
+
+==> background-position:
+
+mais informações sobre "background-position"
+=> https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+
+
 
 
 
