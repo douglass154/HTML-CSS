@@ -267,6 +267,28 @@ Obs: size não está funcionando no momento com o shorthand, então tem que colo
 
 
 
+                                              ==  CENTRALIZAÇÃO VERTICAL DE CAIXAS  ==
+
+
+O elemento que for o container terá o posicionamento relativo (position: relative;) , eles já são naturalmente relativos, mas caso queira colocar o posicionamento por garantia, não tem problema.
+
+O conteúdo que é a parte de dentro vai ter o posicionamento absoluto (position: absolute;) , quando definimos o canteúdo como absoluto, podemos configurar duas propriedades muito importantes:
+
+==> left e top
+
+O valor que será definido em left, será a distancia que o conteúdo se afastará da esquerda do container.
+O valor que será definido em top, será a distancia que o conteúdo se afastará do topo do container.
+
+Obs: Sempre essas propriedades tomarão como base de posicionamento o canto superior esquedo do conteúdo
+
+Isso se resolve colocando a propriedade "transform" com a função "translate()", o transform permite fazer zoom, dar perspectivas, alteração de escala ou rodar elementos, e a função translate() reposiciona um elemento na direção horizontal e/ou vertical.
+
+Saiba mais sobre o transform ==> https://developer.mozilla.org/pt-BR/docs/Web/CSS/transform
+
+
+
+
+
 
 
 
