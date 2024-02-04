@@ -97,6 +97,7 @@ Abaixo, listei alguns elementos inline-level usados pela HTML:
 ==>  <a>  <abbr>  <acronym>  <b>  <bdo>  <br>  <button>  <cite>  <code>  <dfn>  <em>  <i>
 
 ==>  <img>  <input>  <kbd>  <label>  <map>  <object>  <output>  <q>  <samp>  <script>  <select>  
+
 ==>  <small>  <span>  <strong>  <sub>  <textarea>  <tt>  <var>
 
 
@@ -210,37 +211,58 @@ Informações sobre as propriedades do background em geral
 ==> https://developer.mozilla.org/pt-BR/docs/Web/CSS/background
 
 
-Todo elemento que funciona como uma caixa pode receber uma imagem de fundo dentro dele com a declaração "background-image:" , com a função "url()" , ficando:
 
 ==> background-image: url();
+
+Todo elemento que funciona como uma caixa pode receber uma imagem de fundo dentro dele com a declaração "background-image:" , com a função "url()" , ficando:
 
 mais informações sobre "background-image"
 => https://developer.mozilla.org/en-US/docs/Web/CSS/background-image~
 
 
-A propriedade "background-repeat" é usada para definir como uma imagem de fundo se repete na tela
 
-==> background-repeat: 
+==> background-position:
+
+A propriedade "background-position" define a posição inicial de uma imagem de fundo. Por padrão, uma imagem de plano de fundo é colocada no canto superior esquerdo de um elemento e repetida tanto verticalmente quanto horizontalmente.
+
+mais informações sobre "background-position"
+=> https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+
+
+
+==> background-repeat:
+
+A propriedade "background-repeat" é usada para definir como uma imagem de fundo se repete na tela 
 
 mais informações sobre "background-size"
 => https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat
 
 
-A propriedade "background-size" do CSS define o tamanho da imagem de fundo do elemento. 
-A imagem pode ser deixada no seu tamanho natural, estendida ou comprimida para caber no espaço disponível.
 
 ==> background-size:
+
+A propriedade "background-size" do CSS define o tamanho da imagem de fundo do elemento. 
+A imagem pode ser deixada no seu tamanho natural, estendida ou comprimida para caber no espaço disponível.
 
 mais informações sobre "background-size"  
 => https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-size
 
 
-A propriedade "background-position" define a posição inicial de uma imagem de fundo. Por padrão, uma imagem de plano de fundo é colocada no canto superior esquerdo de um elemento e repetida tanto verticalmente quanto horizontalmente.
 
-==> background-position:
+==> background-attachment:
 
-mais informações sobre "background-position"
-=> https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+a propriedade CSS "background-attachment" determina se aquela posição da imagem é fixa com o viewport, ou se irá rolar juntamente com o seu bloco.
+
+mais informações sobre "background-attachment"
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-attachment
+
+
+
+Para usar shorthand no background, basta colocar os valores nesta odem:
+
+color -> image -> position -> repeat -> [size] -> attachment
+
+Obs: size não está funcionando no momento com o shorthand, então tem que coloca-lo separadamente em outra propriedade, no caso a propriedade "background-size"
 
 
 
