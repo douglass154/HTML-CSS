@@ -8,6 +8,10 @@
     font-family: 'Kalam', cursive, sans-serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
 }
@@ -15,7 +19,8 @@ header {
 .titulo-principal {
     font-family: 'Patua One', serif;
     text-align: center;
-    font-size: 4.5em;
+    font-size: 10vw;
+    font-variant: small-caps;
     color: #fff;
     
     padding-top: 50px;
@@ -41,23 +46,24 @@ header {
 }
 
 
+
 main {
     background-color: white;
 }
 
 section {
     display: block;
-    padding: 85px 0 85px 30px;
+    padding: 10vh 0 10vh 30px;
 }
 
 section p {
-    font-size: 30px;
+    font-size: 4vw;
     font-weight: bold;
     padding-bottom: 28px;
 }
 
 .p-branco {
-    width: 370px;
+    display: inline-block;
     color: white;
     padding: 7px;
     text-shadow: 2px 2px 6px black;
@@ -85,6 +91,7 @@ section p {
 
     box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.568) inset;
 }
+
 
 
 footer {

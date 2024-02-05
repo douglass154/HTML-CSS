@@ -22,6 +22,7 @@
 (Note: Cores terciárias são representadas primeiro pelo nome das cores primárias (amarelo) e logo em seguida representada por uma cor secundária (verde), ficando amarelo-esverdeado)
 
 
+
                                                            ==  TEMPERATURA DE CORES  ==
 
 
@@ -33,6 +34,7 @@
 ==>  Amarelo, Amarelo-alaranjado, Laranja, Vermelho-alaranjado, Vermelho e Vermelho-arroxeado
 
 
+
                                                            ==  CORES COMPLEMENTARES  ==
 
 
@@ -41,12 +43,14 @@ São aquelas que apresentam o maior contraste entre si. Elas estão localizadas 
 Se pegarmos qualquer cor primária, a sua cor complementar é sempre uma cor secundária. De forma similar, qualquer cor terciária tem uma outra cor terciária como complementar. Quando juntamos duas  cores complementares, sempre obtemos o cinza.
 
 
+
                                                                 ==  CORES ANÁLOGAS  ==
 
 
 Diferente das cores complementares, que estão do lado extremo oposto no círculo cromático, as cores análogas são aquelas que são imediatamente vizinhas entre si. 
 
 Por serem cores consecutivas, as cores análogas possuem um baixo contraste entre elas, mas criam uma bela harmonia quando combinadas em um mesmo design.
+
 
 
 -------------------->  ATENÇÃO SE QUISER SABER MAIS OLHE O PDF DO CÍRCULO CROMÁTICO  <----------------------
@@ -58,7 +62,9 @@ Ferramentas úteis para fazer paletas de cores =
 ==> Coolors
 
 
+
                                                     ==  CARACTERÍSTICAS DAS FONTES  ==
+
 
 Vamos analisar cada uma das partes de um tipo. Volte sempre que precisasr, para o PDF "Tudo sobre Fontes" para ler a descrição de cada elemento das fontes, lá tem a foto das letras em "Anatomia do Tipo":
 
@@ -82,6 +88,7 @@ Componentes anatômicos corporal:
 ==> Olho
 ==> Orelha
 ==> Cauda
+
 
 
                                                  ==  MEDIDAS DE TAMANHO DAS FONTES  ==
@@ -110,6 +117,7 @@ Para medidas de fonte é recomendável utilizar apenas "px" e "em" MAS o
 (Note: 16px geralmente é = 1em)
 
 
+
                                                              ==  PESO DAS FONTES  ==
 
 
@@ -131,6 +139,7 @@ Coloque os valores nesta ordem, é obrigatório esta ordem:
 ==> font-style  ->  font-weight  ->  font-size  ->  font-family
 
 ==> Exemplo: (==> font: italic bolder 2em Helvetica, sans - serif;)
+
 
 
                                                       ==  FONTES EXTERNAS BAIXADAS  ==
@@ -160,6 +169,40 @@ Como no exemplo abaixo:
 ==> embedded-opentype
 ==> truetype-aat (Apple Advanced Typography)
 ==> svg
+
+
+
+                                                     ==  TRANSFORMAÇÃO DE TEXTO  ==
+
+
+==> text-transform:
+A propriedade CSS "text-transform" especifica como colocar o texto de um elemento em maiúsculo. 
+Ele pode ser usado para fazer com que o texto apareça totalmente em letras maiúsculas ou minúsculas, ou com cada palavra em maiúscula.
+
+-> text-transform: uppercase;
+-> text-transform: lowercase;
+-> text-transform: capitalize;
+-> text-transform: none;
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+
+
+==> font-variant: 
+Define as variantes entre normal ou small-caps.
+Uma fonte small-caps é aquela que usa letras maiúsculas de tamanhos reduzidos.
+
+
+-> font-variant: normal;
+-> font-variant: small-caps;
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant
+
+
+==> font-stretch:
+Esta propriedade serve para esticar e encolher texto.
+
+-> font-stretch: condensed;
+-> font-stretch: normal;
+-> font-stretch: expanded;
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch
 
 
 
