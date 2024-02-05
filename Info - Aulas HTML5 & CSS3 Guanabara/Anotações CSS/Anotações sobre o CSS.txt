@@ -287,6 +287,42 @@ Saiba mais sobre o transform ==> https://developer.mozilla.org/pt-BR/docs/Web/CS
 
 
 
+                                                          == TUDO SOBRE DISPLAY ==
+
+
+A propriedade "display" define o comportamento do elemento em relação aos demais elementos do documento. Originalmente, o código possuia dois tipos de elementos: inline, apresentados no navegador de forma contínua, como conteúdo; e block, apresentados no navegador como blocos de separação e organização do conteúdo.
+
+Uso de alguns valores de exibição diferentes:
+
+-> display: none;
+-> display: inline;
+-> display: block;
+-> display: inline-block;
+
+Desativando a renderização do elemento HTML no bloco: none
+Quando definimos um elemento com CSS display none, significa que ele e os seus elementos filhos não são exibidos na tela.
+-----> display: none;
+
+
+Renderizando o elemento HTML embutido no container: inline
+O valor CSS display inline é utilizado quando queremos que os elementos fiquem posicionados lado a lado. É importante dizer que, ao utilizar esse valor, as propriedades width (largura) e height (altura) serão ignoradas se forem definidas no código CSS.
+-----> display: inline;
+
+
+Renderizando o elemento HTML como um container: block
+Quando atribuímos o valor CSS display block à propriedade, significa que o elemento será posicionado em uma nova linha.
+-----> display: block;
+
+
+Definindo propriedades de largura e altura para o elemento HTML: inline-block
+Ao utilizarmos o valor CSS display inline-block podemos organizar os elementos lado a lado e definirmos as propriedades de largura e altura, pois elas não serão ignoradas pelo navegador.
+----> display: inline-block;
+
+
+Saiba mais: https://blog.betrybe.com/css/css-display/
+Saiba mais: https://developer.mozilla.org/pt-BR/docs/Web/CSS/display
+
+
 
 
 
