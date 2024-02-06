@@ -217,7 +217,7 @@ do site, documentos relacionados.
                                                        ==  MODULO 3 HTML E CSS  ==
 
 
-                                                                 ==  TABELAS  ==
+                                                          ==  TABELAS SIMPLES  ==
 
 
 Todas as tabelas mais simples, possuem a seguinte hierarquia:

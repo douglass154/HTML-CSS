@@ -327,7 +327,7 @@ Saiba mais: https://developer.mozilla.org/pt-BR/docs/Web/CSS/display
 
 
 
-                                                   ==  INFORMAÇÕES SOBRE TABELAS  ==
+                                            ==  INFORMAÇÕES SOBRE TABELAS (SIMPLES) ==
 
 
 A propriedade CSS "border-collapse" define se as células dentro do elemento <table> possuem bordas grudadas ou separadas.
@@ -345,6 +345,50 @@ Ex: border-collapse: separate;
 
 Valor inicial :     separate
 Aplica-se a :      elemento <table> e valor inline-table (display: inline-table;)
+
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse
+
+
+
+==> vertical-align
+
+A propriedade "vertical-align" do CSS define o alinhamento vertical de uma caixa inline, inline-block ou table-cell.
+
+A propriedade "vertical-align" pode ser usada em dois contextos:
+
+
+Para alinhar verticalmente a caixa de um elemento inline dentro da caixa de linha que a contém. Por exemplo, pode ser usado para posicionar verticalmente uma imagem em uma linha de texto.
+
+Para alinhar verticalmente o conteúdo de uma célula em uma tabela.
+
+
+Observe que "vertical-align" só se aplica a elementos inline, inline-block e table-cell: 
+você não pode usá-lo para alinhar verticalmente elementos em nível de bloco.
+
+Valores para células da tabela :
+
+==> top
+     Alinha a borda de preenchimento superior da célula com a parte superior da linha.
+Ex: vertical-align: top;
+
+
+==> middle
+     Centraliza a caixa de preenchimento da célula dentro da linha.
+Ex: vertical-align: middle;
+
+
+==> bottom
+     Alinha a borda de preenchimento inferior da célula com a parte inferior da linha.
+Ex: vertical-align: bottom;
+
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/vertical-align
+
+
+
+
+
+
+
 
 
 
