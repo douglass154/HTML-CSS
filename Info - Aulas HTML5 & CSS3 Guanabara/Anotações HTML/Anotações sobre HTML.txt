@@ -214,3 +214,67 @@ do site, documentos relacionados.
 
 
 
+                                                       ==  MODULO 3 HTML E CSS  ==
+
+
+                                                                 ==  TABELAS  ==
+
+
+Todas as tabelas mais simples, possuem a seguinte hierarquia:
+
+  <table>
+         <tr>
+               <th><th/>
+               <td><td/>	
+         <tr/>
+  <table/>
+
+table  => tabela
+table row (tr)  => linha de tabela
+table header (th)  => cabeçalho de tabela
+table data (td)  => dado de tabela
+
+Obs : se a hierarquia da tabela não for obedecida, os intens irão aparecer ou antes ou depois da tabela
+
+
+
+O elemento <table> HTML representa dados tabulares — isto é, informações apresentadas em uma tabela bidimensional composta por linhas e colunas de células contendo dados.
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table
+
+
+
+O elemento <tr> (table row) que significa table row é usada para definir uma linha. As células da linha podem então ser estabelecidas usando uma combinação de elementos <td> (dado de tabela) e <th> (cabeçalho de tabela).
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr
+
+
+
+O elemento HTML <th> (table header) define uma célula cabeçalho do grupo de células de sua tabela. A exatidão natural deste grupo é definida pelos atributos scope e headers.
+
+Este elemento inclui os atributos globais .
+
+O mais importantes (no momento) é:
+
+==> scope
+Define as células às quais o elemento cabeçalho (definido no <th>) se relaciona. Os possíveis valores enumerados são:
+
+row:  -> o cabeçalho refere-se a todas as células da linha a que pertence;
+col:  -> o cabeçalho refere-se a todas as células da coluna a que pertence;
+rowgroup:  -> o cabeçalho pertence a um rowgroup e está relacionado a todas as suas células;
+colgroup:  -> o cabeçalho pertence a um colgroup e está relacionado a todas as suas células.
+
+Se o scope atributo não for especificado ou seu valor não for row, col, rowgroup ou colgroup, os navegadores selecionarão automaticamente o conjunto de células ao qual a célula de cabeçalho se aplica.
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/th
+
+
+
+O elemento HTML <td> define uma célula de uma tabela que contém dados e pode ser usada como filho do elemento <tr> (table row).
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
+
+
+
+
+
+
+
+
+
