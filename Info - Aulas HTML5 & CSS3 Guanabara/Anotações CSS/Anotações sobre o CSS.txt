@@ -159,7 +159,7 @@ Para centralizar uma caixa, use a seguinte declaração no seu seletor:
                                                         ==  SOMBRAS NAS CAIXAS  ==
 
 
-Para adicionarmos sombras nas caixas basta colocar a propriedade box-shadow e seus quatro valores. 
+Para adicionarmos sombras nas caixas basta colocar a propriedade "box-shadow" e seus quatro valores. 
 A ordem é sempre essa: 
 
 1. Deslocamento horizontal (h-offset): quanto a sombra vai andar para o lado
@@ -202,6 +202,9 @@ partindo do canto superior esquerdo.
     - - color1:
 }
 
+
+
+                                                        ==  MODULO 3 HTML E CSS  ==
 
 
                                                      ==  IMAGEM DE FUNDO NO SITE  ==
@@ -321,6 +324,28 @@ Ao utilizarmos o valor CSS display inline-block podemos organizar os elementos l
 
 Saiba mais: https://blog.betrybe.com/css/css-display/
 Saiba mais: https://developer.mozilla.org/pt-BR/docs/Web/CSS/display
+
+
+
+                                                   ==  INFORMAÇÕES SOBRE TABELAS  ==
+
+
+A propriedade CSS "border-collapse" define se as células dentro do elemento <table> possuem bordas grudadas ou separadas.
+
+A propriedade "border-collapse" é especificada como um único valor, que pode ser escolhido na lista abaixo.
+
+==> collapse
+     As células adjacentes têm bordas compartilhadas (o modelo de renderização de tabela com                   bordas grudadas).
+Ex: border-collapse: collapse;
+
+
+==> separate
+     As células adjacentes têm bordas distintas (o modelo de renderização de tabela com bordas                separadas).
+Ex: border-collapse: separate;
+
+Valor inicial :     separate
+Aplica-se a :      elemento <table> e valor inline-table (display: inline-table;)
+
 
 
 
