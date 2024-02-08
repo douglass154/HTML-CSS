@@ -208,9 +208,8 @@ texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”.
 ==> Footer:
 
 Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte
-diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um
-<aside>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa
-do site, documentos relacionados.
+diretamente do conteúdo nem é um conteúdo periférico ( o que caracterizaria um <aside> ), 
+mas possui informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados.
 
 
 
@@ -230,9 +229,9 @@ Todas as tabelas mais simples, possuem a seguinte hierarquia:
   <table/>
 
 table  => tabela
-table row (tr)  => linha de tabela
-table header (th)  => cabeçalho de tabela
-table data (td)  => dado de tabela
+table row ( tr )  => linha de tabela
+table header ( th )  => cabeçalho de tabela
+table data ( td )  => dado de tabela
 
 Obs : se a hierarquia da tabela não for obedecida, os intens irão aparecer ou antes ou depois da tabela
 
@@ -243,19 +242,26 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table
 
 
 
-O elemento <tr> (table row) que significa table row é usada para definir uma linha. As células da linha podem então ser estabelecidas usando uma combinação de elementos <td> (dado de tabela) e <th> (cabeçalho de tabela).
+O elemento HTML <caption> especifica a legenda ( ou título ) de uma tabela.
+Propriedades CSS que podem ser especialmente úteis para estilizar o elemento <caption> :
+==> text-align e caption-side
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/caption
+
+
+
+O elemento <tr> ( table row ) que significa table row é usada para definir uma linha. As células da linha podem então ser estabelecidas usando uma combinação de elementos <td> ( dado de tabela ) e <th> (cabeçalho de tabela).
 Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr
 
 
 
-O elemento HTML <th> (table header) define uma célula cabeçalho do grupo de células de sua tabela. A exatidão natural deste grupo é definida pelos atributos scope e headers.
+O elemento HTML <th> ( table header ) define uma célula cabeçalho do grupo de células de sua tabela. A exatidão natural deste grupo é definida pelos atributos scope e headers.
 
 Este elemento inclui os atributos globais .
 
 O mais importantes (no momento) é:
 
 ==> scope
-Define as células às quais o elemento cabeçalho (definido no <th>) se relaciona. Os possíveis valores enumerados são:
+Define as células às quais o elemento cabeçalho ( definido no <th> ) se relaciona. Os possíveis valores enumerados são:
 
 row:  -> o cabeçalho refere-se a todas as células da linha a que pertence;
 col:  -> o cabeçalho refere-se a todas as células da coluna a que pertence;
@@ -269,6 +275,17 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/th
 
 O elemento HTML <td> define uma célula de uma tabela que contém dados e pode ser usada como filho do elemento <tr> (table row).
 Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
+
+
+
+Para organizar semanticamente a tabela, são utilizadas para dividir o conteúdo da tabela em três: cabeçalho ( <thead> ), corpo ( <tbody> ) e o rodapé ( <tfoot> ).
+
+O elemento HTML <thead> encapsula um conjunto de linhas da tabela ( elemento <tr> ), indicando que elas compõem o cabeçalho de uma tabela com informações sobre as colunas da tabela. Geralmente isso ocorre na forma de cabeçalhos de coluna ( elementos <th> ).
+
+O elemento HTML <tbody> encapsula um conjunto de linhas da tabela ( elementos <tr> ), indicando que elas compõem o corpo dos dados (principais) de uma tabela.
+
+O elemento HTML <tfoot> encapsula um conjunto de linhas da tabela ( elementos <tr> ), indicando que elas compõem o rodapé de uma tabela com informações sobre as colunas da tabela. Geralmente é um resumo das colunas, por exemplo, uma soma dos números fornecidos em uma coluna.
+
 
 
 
