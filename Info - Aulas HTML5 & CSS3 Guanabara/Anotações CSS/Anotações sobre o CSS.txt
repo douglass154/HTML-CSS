@@ -398,12 +398,14 @@ Assim o cabeçalho da tabela ficará fixo, seguindo as informações da tabela e
 
 
 
+                                                ==  MESCLAGEM DE CÉLULAS (TABELAS)  ==
 
 
+As tabelas HTML podem ter células que se estendem por várias linhas e/ou colunas.
 
+Para fazer uma célula abranger várias colunas, use o atributo colspan ( colspan='' '' ) :
+Obs: O valor do atributo colspan representa o número de colunas a abranger.
 
-
-
-
-
+Para fazer uma célula abranger várias linhas, use o atributo rowspan ( rowspan='' '' ) :
+Obs: O valor do atributo rowspan representa o número de linhas a abranger.
 
