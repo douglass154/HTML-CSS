@@ -12,6 +12,7 @@
         }
 
         table {
+            position: relative;
             border-collapse: collapse;
         }
 
@@ -21,6 +22,16 @@
             margin-bottom: 1em;
         }
 
+        table tr th {
+            background-color: skyblue;
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
         th, td {
             border: 2px solid gray;
             padding: 8px;
@@ -28,11 +39,15 @@
         }
 
         th {
-            background-color: rgba(135, 207, 235, 0.425);
+            background-color: skyblue;
         }
 
         td.population {
             text-align: right;
+        }
+
+        tfoot .population {
+            background-color: skyblue;
         }
     </style>
 </head>
@@ -249,6 +264,5 @@
             </tr>
         </tfoot>
     </table>
-
 </body>
 </html>
