@@ -327,19 +327,19 @@ Saiba mais: https://developer.mozilla.org/pt-BR/docs/Web/CSS/display
 
 
 
-                                            ==  INFORMAÇÕES SOBRE TABELAS (SIMPLES) ==
+                                            ==  INFORMAÇÕES SOBRE TABELAS  ==
 
 
 A propriedade CSS "border-collapse" define se as células dentro do elemento <table> possuem bordas grudadas ou separadas.
 
 A propriedade "border-collapse" é especificada como um único valor, que pode ser escolhido na lista abaixo.
 
-==> collapse
+-----> collapse
      As células adjacentes têm bordas compartilhadas (o modelo de renderização de tabela com                   bordas grudadas).
 Ex: border-collapse: collapse;
 
 
-==> separate
+-----> separate
      As células adjacentes têm bordas distintas (o modelo de renderização de tabela com bordas                separadas).
 Ex: border-collapse: separate;
 
@@ -367,17 +367,17 @@ você não pode usá-lo para alinhar verticalmente elementos em nível de bloco.
 
 Valores para células da tabela :
 
-==> top
+-----> top
      Alinha a borda de preenchimento superior da célula com a parte superior da linha.
 Ex: vertical-align: top;
 
 
-==> middle
+-----> middle
      Centraliza a caixa de preenchimento da célula dentro da linha.
 Ex: vertical-align: middle;
 
 
-==> bottom
+-----> bottom
      Alinha a borda de preenchimento inferior da célula com a parte inferior da linha.
 Ex: vertical-align: bottom;
 
@@ -385,7 +385,16 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/vertical-align
 
 
 
+==> Cabeçalho fixo em tabelas grandes
 
+Para deixar o cabeçalho fixo no topo da tabela, primeiramente o elemento <table> tem que receber um -----> position: relative
+
+Depois basta colocar nos elementos table > tr > th , as propriedades: 
+
+-----> position: sticky
+-----> top: -1px
+
+Assim o cabeçalho da tabela ficará fixo, seguindo as informações da tabela e descendo junto com elas.
 
 
 
