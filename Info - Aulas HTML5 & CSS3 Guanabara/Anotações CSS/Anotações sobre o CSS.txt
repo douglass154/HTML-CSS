@@ -207,7 +207,7 @@ partindo do canto superior esquerdo.
                                                         ==  MODULO 3 HTML E CSS  ==
 
 
-                                                     ==  IMAGEM DE FUNDO NO SITE  ==
+                                       ==  IMAGEM DE FUNDO NO SITE (BACKGROUNDS)  ==
 
 
 Informações sobre as propriedades do background em geral
