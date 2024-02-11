@@ -216,7 +216,7 @@ mas possui informações sobre autoria do conteúdo, links adicionais, mapa do s
                                                        ==  MODULO 3 HTML E CSS  ==
 
 
-                                                          ==  TABELAS SIMPLES  ==
+                                                 ==  INFORMAÇÕES SOBRE TABELAS  ==
 
 
 Todas as tabelas mais simples, possuem a seguinte hierarquia:
@@ -287,6 +287,17 @@ O elemento HTML <tbody> encapsula um conjunto de linhas da tabela ( elementos <t
 O elemento HTML <tfoot> encapsula um conjunto de linhas da tabela ( elementos <tr> ), indicando que elas compõem o rodapé de uma tabela com informações sobre as colunas da tabela. Geralmente é um resumo das colunas, por exemplo, uma soma dos números fornecidos em uma coluna.
 
 
+
+                                                ==  MESCLAGEM DE CÉLULAS (TABELAS)  ==
+
+
+As tabelas HTML podem ter células que se estendem por várias linhas e/ou colunas.
+
+Para fazer uma célula abranger várias colunas, use o atributo colspan ( colspan='' '' ) :
+Obs: O valor do atributo colspan representa o número de colunas a abranger.
+
+Para fazer uma célula abranger várias linhas, use o atributo rowspan ( rowspan='' '' ) :
+Obs: O valor do atributo rowspan representa o número de linhas a abranger.
 
 
 

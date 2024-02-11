@@ -350,7 +350,8 @@ Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse
 
 
 
-==> vertical-align
+                                                     == VERTICAL - ALIGN (TABELAS) ==
+
 
 A propriedade "vertical-align" do CSS define o alinhamento vertical de uma caixa inline, inline-block ou table-cell.
 
@@ -385,7 +386,8 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/vertical-align
 
 
 
-==> Cabeçalho fixo em tabelas grandes
+                                            == CABEÇALHO FIXO EM TABELAS GRANDES ==
+
 
 Para deixar o cabeçalho fixo no topo da tabela, primeiramente o elemento <table> tem que receber um -----> position: relative
 
@@ -398,14 +400,19 @@ Assim o cabeçalho da tabela ficará fixo, seguindo as informações da tabela e
 
 
 
-                                                ==  MESCLAGEM DE CÉLULAS (TABELAS)  ==
+                                                     == EFEITO ZEBRADO (TABELAS) == 
 
 
-As tabelas HTML podem ter células que se estendem por várias linhas e/ou colunas.
+A pseudo-classe CSS :nth-child() seleciona elementos com base em suas posições em um grupo de elementos irmãos.
+é usada com apenas um argumento, que representa o padrão usado para selecionar os elementos.
 
-Para fazer uma célula abranger várias colunas, use o atributo colspan ( colspan='' '' ) :
-Obs: O valor do atributo colspan representa o número de colunas a abranger.
+Valores: 
 
-Para fazer uma célula abranger várias linhas, use o atributo rowspan ( rowspan='' '' ) :
-Obs: O valor do atributo rowspan representa o número de linhas a abranger.
+-----> odd
+Representa elementos cuja posição numérica em uma série de irmãos seja ímpar: 1, 3, 5, etc.
+
+-----> even
+Representa elementos cuja posição numérica em uma série de irmãos seja par: 2, 4, 6, etc.
+
+
 
