@@ -414,5 +414,32 @@ Representa elementos cuja posição numérica em uma série de irmãos seja ímp
 -----> even
 Representa elementos cuja posição numérica em uma série de irmãos seja par: 2, 4, 6, etc.
 
+Saiba mais ->https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child
+
+
+
+                                          ==  RESPONSIVIDADE EM TABELAS OU OUTROS  ==
+
+
+A propriedade CSS overflow especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado, exibido com barras de rolagem ou se transborda do elemento.
+
+Sintaxe --> overflow:  visible | hidden | scroll | auto | inherit
+
+Valores:
+
+-----> visible
+Valor padrão. O conteúdo não é cortado e pode ser renderizado para fora da caixa de conteúdo.
+
+-----> hidden
+O conteúdo é cortado e nenhuma barra de rolagem é exibida.
+
+-----> scroll
+O conteúdo é acessível através de barras de rolagem que são exibidas mesmo que o conteúdo não precise. Isso evita o problema de barras de rolagem aparecendo e desaparecendo quando o conteúdo é dinâmico. Impressoras podem imprimir o conteúdo vazado.
+
+-----> auto
+Depende do navegador utilizado. Navegadores desktop como o Firefox geralmente exibem barras de rolagem apenas quando necessário.
+
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow
+
 
 

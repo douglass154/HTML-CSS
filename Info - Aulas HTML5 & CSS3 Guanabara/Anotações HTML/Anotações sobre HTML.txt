@@ -299,6 +299,8 @@ Obs: O valor do atributo colspan representa o número de colunas a abranger.
 Para fazer uma célula abranger várias linhas, use o atributo rowspan ( rowspan='' '' ) :
 Obs: O valor do atributo rowspan representa o número de linhas a abranger.
 
+Saiba mais -> https://www.w3schools.com/html/html_table_colspan_rowspan.asp
+
 
 
                                        ==  AGRUPANDO COLUNAS DAS TABELAS ( colgroup )  ==
@@ -323,8 +325,8 @@ Especifica o número de colunas consecutivas que o <colgroup>elemento abrange. O
 
 O elemento HTML <col> define uma ou mais colunas em um grupo de colunas representado por seu elemento pai <colgroup>. O elemento <col> só é válido como filho de um elemento <colgroup> que não possui nenhum atributo span definido.
 
-
-
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col
 
 
 
