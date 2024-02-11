@@ -11,3 +11,6 @@
 
 
 - Site para criar um esbolço dos templates de sites: mockflow.com
+
+
+- PDFs completos do guanabara HTML E CSS: https://github.com/gustavoguanabara/html-css/blob/fe6653ecdafa5b7275a5ecb4c36a8ca14f5043e7/aulas-pdf/22%20-%20Inline%20Frames.pdf

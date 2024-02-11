@@ -330,5 +330,32 @@ Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col
 
 
 
+                                                            ==  IFRAME ELEMENTS ==
+
+
+O elemento HTML <iframe> (ou elemento HTML inline frame) representa um contexto de navegação aninhado, efetivamente incorporando outra página HTML para a página atual.
+
+Um <iframe> possui um tamanho padrão de 300x150, 300px de largura e 150px de altura
+
+Atributos:
+
+-----> scrolling
+Atributo enumerado que indica quando o navegador deve fornecer uma barra de rolagem (ou outro dispositivo de rolagem) para o quadro:
+
+	• auto: Só quando necessário.
+	• yes: Sempre mostrar uma barra de rolagem.
+	• no: Nunca mostrar uma barra de rolagem.
+
+-----> height
+Indica a altura do quadro HTML 5 em pixels CSS
+
+-----> width
+Indica a largura do quadro HTML 5 em pixels CSS
+
+----> frameborder
+O valor 1 (o padrão) pede ao navegador para desenhar uma borda entre este quadro e todos os outros quadros. O valor 0 informa ao navegador para não traçar uma fronteira entre este quadro e outros quadros.
+
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe
+
 
 
