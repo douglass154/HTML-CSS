@@ -301,6 +301,30 @@ Obs: O valor do atributo rowspan representa o número de linhas a abranger.
 
 
 
+                                       ==  AGRUPANDO COLUNAS DAS TABELAS ( colgroup )  ==
+
+
+O elemento HTML <colgroup> define um grupo de colunas dentro de uma tabela. Dentro deste elemento virá o elemento <col>, a quantidade de elementos <col> devem equivaler a quantidade de colunas da tabela, ou adicionar atributos "span" para agrupar 1 elemento <col> em duas colunas.
+Exemplo: <col span="2">
+
+Exemplo completo: 
+<colgroup>
+	<col>
+	<col span="2">
+	<col span="2" class="exemplo">
+</colgroup>
+
+O elemento <col> inclui um atributo global .
+
+Atributo: 
+
+-----> span
+Especifica o número de colunas consecutivas que o <colgroup>elemento abrange. O valor deve ser um número inteiro positivo maior que zero. Se não estiver presente, seu valor padrão será 1.
+
+O elemento HTML <col> define uma ou mais colunas em um grupo de colunas representado por seu elemento pai <colgroup>. O elemento <col> só é válido como filho de um elemento <colgroup> que não possui nenhum atributo span definido.
+
+
+
 
 
 
