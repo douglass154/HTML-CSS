@@ -359,3 +359,29 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe
 
 
 
+                                                     ==  NAVEGAÇÃO COM IFRAME  ==
+
+
+Podemos dar orden a um <iframe> para trocar o seu conteúdo através de links ou códigos JavaScript. O primeiro passo é dar um nome a ele atráves do parâmetro "name".
+
+	<iframe name=''exemplo''  src=''pagina01.html''>
+		<p>Seu navegador não é compatível
+		com a exibição desse conteúdo</p>
+	</iframe>
+
+No código acima o quadro terá 300x150 pixel de tamanho e vai exibir o conteúdo do arquivo pagina01.html (se for compatível, é claro). A diferença aqui é que atribuímos um nome a ele, que agora se chama quadro.
+
+A qualquer lugar do documento original (o que contém o frame), podemos criar um link da seguinte forma:
+
+	<a href=''pagina02.html''  target=''quadro''> Abrir segundo Site </a>
+
+O link que criamos vai abrir a pagina02.html dentro do iframe sempre que o usuário clicar sobre ele, substituindo o conteúdo anterior imediatamente.
+
+
+
+
+
+
+
+
+
