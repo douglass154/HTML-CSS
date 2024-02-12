@@ -382,6 +382,65 @@ O link que criamos vai abrir a pagina02.html dentro do iframe sempre que o usuá
 
 
 
+                                                  ==  SEGURANÇA NOS IFRAMES  ==
+
+
+Parâmetros: 
+
+-----> sandbox
+Se especificado como uma sequência vazia, esse atributo ativa restrições extras no conteúdo que pode aparecer no quadro embutido. O valor do atributo pode ser uma string vazia (todas as restrições são aplicadas) ou uma lista separada por espaço de tokens que eliminam restrições específicas. Os valores válidos são:
+
+	• sandbox:
+		Valor padrão do parâmetro sandbox.
+
+	• allow-same-origin: 
+		Permite que o conteúdo seja tratado como sendo de sua origem normal. Se esta 			palavra-chave não for usada, o conteúdo incorporado será tratado como sendo de 		origem única.
+
+	• allow-top-navigation: 
+		permite que o contexto de navegação incorporado navegue (carregue) o conteúdo 		para o contexto de navegação de nível superior. Se esta palavra-chave não for 		utilizada, esta operação não será permitida.
+
+	• allow-forms: 
+		permite que o contexto de navegação incorporado envie formulários. Se esta 		palavra-chave não for utilizada, esta operação não será permitida.
+
+	• allow-popups: 
+		permite pop-ups (como em window.open).
+
+	• allow-scripts: 
+		permite que o contexto de navegação incorporado execute scripts (mas não crie 		janelas pop-up). Se esta palavra-chave não for utilizada, esta operação não será 		permitida.
+
+	• allow-pointer-lock: 
+		permite que o contexto de navegação incorporado use a API Pointer Lock
+
+
+	Observações:
+
+	• Quando o documento incorporado tem a mesma origem da página principal, é fortemente 		desencorajado usar ambos allow-scriptse allow-same-originao mesmo tempo, pois isso 		permite que o documento incorporado remova programaticamente o sandboxatributo. Embora 		seja aceito, este caso não é mais seguro do que não utilizar o sandboxatributo.
+
+	• O sandbox em geral só tem uma ajuda mínima se o invasor puder fazer com que o conteúdo 	potencialmente hostil seja exibido no navegador do usuário fora de um sandbox iframe. 		Recomenda-se que esse conteúdo seja veiculado a partir de um domínio dedicado separado , 		para limitar os danos potenciais.
+
+	• O sandbox atributo não é suportado no Internet Explorer 9 e versões anteriores, nem no 		Opera.
+
+----->referrerpolicy 
+atributo HTML do elemento <iframe>, que define qual referenciador é enviado ao buscar o recurso.
+O valor ideal a se utilizar é o no-referrer:
+
+• no-referrer:
+Nenhuma informação de referência é enviada junto com as solicitações.
+
+Saiba mais: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe
+Saiba mais: https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/referrerPolicy
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
