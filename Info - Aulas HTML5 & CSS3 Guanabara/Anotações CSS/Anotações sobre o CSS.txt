@@ -21,9 +21,9 @@ Sintaxe de declaração de um pseudo-elemento:
         }
 
 
-todos os pseudo-elementos do CSS:
+todos os pseudo-elementos do CSS (que eu conheço até o momento) :
 
-::first-line, ::first-letter, ::before, ::after e ::selection
+::first-line, ::first-letter, ::before, ::after e ::selection, ::-webkit-scrollbar
 
 
  ::first-line =
@@ -40,6 +40,9 @@ Assim como ::before, o pseudo-elemento ::after também cria um falso elemento qu
 
  ::selection =
 O pseudo-elemento ::selection é utilizado para selecionar o conteúdo de um elemento e, a partir disso, customizar algumas propriedades dessa área, como a cor de fundo e do texto.
+
+ :: -webkit-scrollbar =
+O pseudo-elemento ::-webkit-scrollbar é utilizado para esconder as barras de rolagem do site. Ele é utilizado de forma solitária, ou seja, não se utiliza depois de uma propriedade CSS.
 
 
 Para saber mais sobre Pseudo-Elementos e Pseudo-Classes acesse os links abaixo:
