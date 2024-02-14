@@ -385,31 +385,31 @@ O link que criamos vai abrir a pagina02.html dentro do iframe sempre que o usuá
                                                   ==  SEGURANÇA NOS IFRAMES  ==
 
 
-Parâmetros: 
+Atributos: 
 
 -----> sandbox
 Se especificado como uma sequência vazia, esse atributo ativa restrições extras no conteúdo que pode aparecer no quadro embutido. O valor do atributo pode ser uma string vazia (todas as restrições são aplicadas) ou uma lista separada por espaço de tokens que eliminam restrições específicas. Os valores válidos são:
 
 	• sandbox:
-		Valor padrão do parâmetro sandbox.
+	Valor padrão do parâmetro sandbox.
 
 	• allow-same-origin: 
-		Permite que o conteúdo seja tratado como sendo de sua origem normal. Se esta 			palavra-chave não for usada, o conteúdo incorporado será tratado como sendo de 		origem única.
+	Permite que o conteúdo seja tratado como sendo de sua origem normal. Se esta 			palavra-chave não for usada, o conteúdo incorporado será tratado como sendo de 			origem única.
 
 	• allow-top-navigation: 
-		permite que o contexto de navegação incorporado navegue (carregue) o conteúdo 		para o contexto de navegação de nível superior. Se esta palavra-chave não for 		utilizada, esta operação não será permitida.
+	permite que o contexto de navegação incorporado navegue (carregue) o conteúdo 			para o contexto de navegação de nível superior. Se esta palavra-chave não for 			utilizada, esta operação não será permitida.
 
 	• allow-forms: 
-		permite que o contexto de navegação incorporado envie formulários. Se esta 		palavra-chave não for utilizada, esta operação não será permitida.
+	permite que o contexto de navegação incorporado envie formulários. Se esta 			palavra-chave não for utilizada, esta operação não será permitida.
 
 	• allow-popups: 
-		permite pop-ups (como em window.open).
+	permite pop-ups (como em window.open).
 
 	• allow-scripts: 
-		permite que o contexto de navegação incorporado execute scripts (mas não crie 		janelas pop-up). Se esta palavra-chave não for utilizada, esta operação não será 		permitida.
+	permite que o contexto de navegação incorporado execute scripts (mas não crie 			janelas pop-up). Se esta palavra-chave não for utilizada, esta operação não será 			permitida.
 
 	• allow-pointer-lock: 
-		permite que o contexto de navegação incorporado use a API Pointer Lock
+	permite que o contexto de navegação incorporado use a API Pointer Lock
 
 
 	Observações:
@@ -419,6 +419,7 @@ Se especificado como uma sequência vazia, esse atributo ativa restrições extr
 	• O sandbox em geral só tem uma ajuda mínima se o invasor puder fazer com que o conteúdo 	potencialmente hostil seja exibido no navegador do usuário fora de um sandbox iframe. 		Recomenda-se que esse conteúdo seja veiculado a partir de um domínio dedicado separado , 		para limitar os danos potenciais.
 
 	• O sandbox atributo não é suportado no Internet Explorer 9 e versões anteriores, nem no 		Opera.
+
 
 ----->referrerpolicy 
 atributo HTML do elemento <iframe>, que define qual referenciador é enviado ao buscar o recurso.
@@ -432,11 +433,43 @@ Saiba mais: https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/r
 
 
 
+                                                          ==  FORMULÁRIOS HTML  ==
 
 
+Toda tela de login, toda página de cadastro, todo campo de busca vai precisar obrigatoriamente de um formulário HTML para começar.
+
+Para construir um formulário, vamos utilizar os seguintes elementos <form> , <label> , <input> , <textarea> , e <button> .
+
+• Elemento <form> :
+Todos formulários HTML começam com um elemento <form> . Este elemento define um formulário. É um elemento de container como um elemento <div> ou <p> , mas ele também suporta alguns atributos específicos para configurar a forma como o formulário se comporta. Todos os seus atributos são opcionais, mas é considerada a melhor prática sempre definir pelo menos o atributo action e o atributo method.
+
+	• O atributo ''action'' define o local (uma URL) em que os dados recolhidos do formulário                        devem ser enviados.
+
+	• O atributo ''method'' define qual o método HTTP para enviar os dados (ele pode ser "GET" ou 	 "POST" , não sei as diferenças ainda).
+
+----->GET:
+condensa todos os dados digitados pelo visitante e envia como parte do endereço acessado.
+Exemplo: htttps://www.google.com.br/exemplo/exemplo2
+
+----->POST:
+Pega os dados digitados e envia diretamente no corpo da requisição HTTP que será feita quando seu visitante clicar para enviar o formulário. Sendo assim, os dados não irão aparecer na URL.
 
 
+• Elemento <label> :
+o elemento HTML <label> faz a a relação entre qual é o objeto do formulário e qual é a etiqueta dele, representa uma legenda para um item em uma interface de usuário. Ele pode estar associado com um elemento de controle, colocando este dentro do elemento label, ou usando o atributo for. Tal controle é chamado o controle etiquetado do elemento etiqueta. Um input pode ser associado a diversas etiquetas (<label>). Seus atributos são :
 
+	• accesskey
+	A tecla de atalho para acessar este elemento a partir do teclado.
+
+	• for
+	O ID de um elemento de formulário relacionados com label no mesmo documento como o 		elemento label. O primeiro elemento tal no documento com uma ID correspondente ao valor 		do atributo é o controle marcado por este elemento etiqueta.
+
+	• form
+	O elemento form que o elemento label está associado a (seu proprietário formulário). O 		valor do atributo deve ser uma identificação de um <form> elemento no mesmo 			documento. Se este atributo não for especificado, este elemento <label> deve ser um 			descendente de um elemento <form>. Este atributo permite que você coloque 			elementos do rótulo em qualquer lugar dentro de um documento, e não apenas como 			descendentes de seus elementos de formulário.
+
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Your_first_form
+Saiba mais -> https://www.w3schools.com/html/html_forms.asp
+Saiba mais -> PDF sobre formulários do Curso em Vídeo.
 
 
 
