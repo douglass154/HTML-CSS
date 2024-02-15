@@ -1,5 +1,5 @@
 
-                                                                              == Códigos e Dicas ==
+                                                           == Códigos e Dicas ==
 
 -- Aperte Ctrl + Shift + P e escreva "abb", depois clique em Wrap with abbreviation, para colocar algo entre uma tag sem ter que excluir a frase ou move-la.
 
@@ -14,3 +14,6 @@
 
 
 - PDFs completos do guanabara HTML E CSS: https://github.com/gustavoguanabara/html-css/tree/fe6653ecdafa5b7275a5ecb4c36a8ca14f5043e7/aulas-pdf
+
+
+- Guanabara recomenda estudar mais sobre RegEx

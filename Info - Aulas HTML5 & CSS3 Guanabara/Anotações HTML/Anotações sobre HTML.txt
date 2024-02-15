@@ -550,6 +550,10 @@ Trabalha junto com os atributos min e max para limitar os incrementos em que val
 Uma dica para o usuário do que ele pode inserir no controle. O texto do atributo não deve conter quebras de linha. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário, ele é ignorado.
 
 
+-----> pattern :
+Uma expressão regular usada para validar o valor do controle. O padrão deve casar com o valor completo da entrada, não apenas uma parte. Use o atributo title para descrever o padrão para ajudar o usuário. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário ele é ignorado. A linguagem da expressão regular é a mesma do JavaScript. O padrão não deve estar entre barras.
+
+
 -----> value :
 Define o valor inicial do controle. Este atributo é opcional exceto quando o valor do atributo type for radio ou checkbox.
 
@@ -561,19 +565,22 @@ Veja todos os types e outros atributos do elemento <input> nesse site:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input
 
 
-
-
-
 Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Your_first_form
 Saiba mais -> https://www.w3schools.com/html/html_forms.asp
 Saiba mais -> PDF sobre formulários do Curso em Vídeo.
 
 
 
+                                        ==  FIELDSET E LEGEND PARA FORMULÁRIOS  ==
 
 
+O elemento HTML <fieldset> é usado para agrupar elementos, assim como labels (<label>), dentro de um formulário web.
+Ele tem que ser colocado dentro do elemento <form>. 
+E dentro deste elemento ( <fieldset> ) irá conter o elemento <legend> (opcional) e os outros elementos de formulário, como <label>, <input> , etc.
 
+O Elemento HTML <legend> representa um rótulo para o conteúdo do seu elemento pai <fieldset>.
 
-
+Saiba mais sobre <legend> -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/legend
+Saiba mais sobre <fieldset> -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/fieldset
 
 
