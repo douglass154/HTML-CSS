@@ -550,6 +550,10 @@ Trabalha junto com os atributos min e max para limitar os incrementos em que val
 Uma dica para o usuário do que ele pode inserir no controle. O texto do atributo não deve conter quebras de linha. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário, ele é ignorado.
 
 
+-----> value :
+Define o valor inicial do controle. Este atributo é opcional exceto quando o valor do atributo type for radio ou checkbox.
+
+
 
 -> Existem muitos outros atributos para o elemento <input> e não vale a pena colocar tudo isso em um bloco de notas, iria ficar tudo desorganizado.
 
