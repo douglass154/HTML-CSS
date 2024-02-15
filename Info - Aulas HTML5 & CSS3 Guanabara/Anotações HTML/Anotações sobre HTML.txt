@@ -1,5 +1,5 @@
 
-                                                                              == Tags HTML ==
+                                                                   == Tags HTML ==
 
   del = 
 Marca um texto como excluído para indicar que ele deve ser lido, mas não considerado
@@ -66,7 +66,7 @@ O elemento <a> em HTML (ou elemento âncora), com o atributo href cria-se um hip
 
 
 
-                                                                        ==  TAGS PARA IMAGENS ==
+                                                            ==  TAGS PARA IMAGENS ==
 
   picture =
 O elemento HTML <picture> é um container usado para especificar múltiplos elementos **<source: media: type>** para um elemento específico <img> contido nele.  Permitindo carregar diferentes arquivos de imagem através de: Media Queries, para diferentes resoluções e orientações de tela. Densidade de pixels, para diferentes tipos de dispositivos.
@@ -80,7 +80,7 @@ O elemento source é utilizado para especificar múltiplos recursos de mídia de
 
 
 
-                                                                       ==  TAGS PARA AÚDIOS ==
+                                                           ==  TAGS PARA AÚDIOS ==
 
   audio =
 O elemento audio é utilizado para embutir conteúdo de som em um documento HTML ou XHTML.
@@ -108,9 +108,9 @@ Especifica a configuração de volume inicial do elemento de áudio, em um inter
 
                                   
 
-                                                                         ==  TAGS PARA VÍDEOS ==
+                                                         ==  TAGS PARA VÍDEOS ==
 
-                                                  Formatos de aquivos de vídeo: mp4/m4v, ogv e WebM
+                                    Formatos de aquivos de vídeo: mp4/m4v, ogv e WebM
 
   video = 
 A <video> tag é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.
@@ -330,6 +330,9 @@ Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col
 
 
 
+                                                         ==  MÓDULO 4 HTML E CSS  ==
+
+
                                                             ==  IFRAME ELEMENTS ==
 
 
@@ -487,19 +490,19 @@ Os Principais atributos são: type , name , id , required
 O tipo de controle a ser exibido. O tipo padrão é text, se este atributo não for especificado. Os valores possíveis são:
 
 • button
-• checkbox
+• checkbox  (obrigatório o parâmetro value)
 • color
 • date
 • datetime
 • datetime-local
 • email
-• file
+• file  (Obs: Usar method=''post'' no <form> quando usar este valor)
 • hidden
 • image
 • month
 • number
 • password
-• radio
+• radio  (Obs: todo input de type="radio" que pertencerem ao mesmo grupo tem que possuir o mesmo    nome, e é obrigatório o parâmetro value)
 • range
 • reset
 • search
@@ -508,6 +511,9 @@ O tipo de controle a ser exibido. O tipo padrão é text, se este atributo não 
 • text (valor padrão)
 • url
 • week
+
+Veja todos os types e outros atributos do elemento <input> nesse site: 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input
 
 
 -----> name :
@@ -551,11 +557,11 @@ Uma dica para o usuário do que ele pode inserir no controle. O texto do atribut
 
 
 -----> pattern :
-Uma expressão regular usada para validar o valor do controle. O padrão deve casar com o valor completo da entrada, não apenas uma parte. Use o atributo title para descrever o padrão para ajudar o usuário. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário ele é ignorado. A linguagem da expressão regular é a mesma do JavaScript. O padrão não deve estar entre barras.
+Uma expressão regular usada para validar o valor do controle. O padrão deve casar com o valor completo da entrada, não apenas uma parte. Use o atributo title para descrever o padrão para ajudar o usuário. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário ele é ignorado. A linguagem da expressão regular é a mesma do JavaScript. O padrão não deve estar entre barras. O simbolo ^ define o inicio do value e $ define o final.
 
 
 -----> value :
-Define o valor inicial do controle. Este atributo é opcional exceto quando o valor do atributo type for radio ou checkbox.
+Define o valor inicial do controle. Este atributo é opcional, EXCETO quando o valor do atributo type for radio ou checkbox.
 
 
 
@@ -571,7 +577,7 @@ Saiba mais -> PDF sobre formulários do Curso em Vídeo.
 
 
 
-                                        ==  FIELDSET E LEGEND PARA FORMULÁRIOS  ==
+                                             ==  FIELDSET E LEGEND PARA FORMULÁRIOS  ==
 
 
 O elemento HTML <fieldset> é usado para agrupar elementos, assim como labels (<label>), dentro de um formulário web.
