@@ -200,10 +200,17 @@ partindo do canto superior esquerdo.
                                                         ==  VARIÁVEIS EM CSS  ==
 
 
+Defina variáveis utilizando o exemplo abaixo:
+
 :root {
-    - - color0: #
-    - - color1:
+    - - color0: #fff;
+    - - fonte1: Arial, Helvetica, Sans-serif;
 }
+
+Chame as variáveis definidas usando o exemplo abaixo:
+
+color: var(- - color0);
+font-family: var(- - fonte1);
 
 
 
