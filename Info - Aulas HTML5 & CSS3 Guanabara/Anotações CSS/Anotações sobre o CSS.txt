@@ -45,6 +45,28 @@ O pseudo-elemento ::selection é utilizado para selecionar o conteúdo de um ele
 O pseudo-elemento ::-webkit-scrollbar é utilizado para esconder as barras de rolagem do site. Ele é utilizado de forma solitária, ou seja, não se utiliza depois de uma propriedade CSS.
 
 
+
+Todas as pseudo-classes do CSS (que eu conheço até o momento) :
+
+:hover, :nth-child(), :focus, :root, :visited
+
+ :hover =
+A pseudo-classe :hover corresponde quando o usuário designa um elemento com um dispositivo apontador, mas não necessariamente o ativa. Este estilo pode ser substituído por qualquer outra pseudo-classe de link-relacionados, isto é :link, :visited, e :active, aparecendo em regras subsequentes. Na ordem para estilizar apropriadamente links, você precisa colocar a regra:hoverdepois das regras :link e :visited mas antes da regra :active, como definido pela ordem LVHA: :link — :visited — :hover — :active.
+
+ :nth-child() = 
+A pseudo-classe CSS :nth-child() seleciona elementos com base em suas posições em um grupo de elementos irmãos.
+
+ :focus =
+A pseudo-classe :focus do CSS é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o mouse (ex: um campo de um formulário).
+A pseudo classe é aplicada apenas ao elemento focado, e não aos seus elementos ascendentes, como ocorre com :checked e :enabled e diferentemente de :active ou :hover.
+
+ :root =
+O :root pode ser útil para declarar variáveis CSS global:
+
+ :visited =
+O :visited é uma Pseudo-classe do CSS para indicar se o link em questão já foi visitado pelo usuário. Por questões de privacidade, os styles que podem ser modificados usando este seletor são muito limitados.
+
+
 Para saber mais sobre Pseudo-Elementos e Pseudo-Classes acesse os links abaixo:
 
 ==> PSEUDO-CLASSES 

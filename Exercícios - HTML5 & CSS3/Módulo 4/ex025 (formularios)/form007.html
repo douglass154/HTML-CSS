@@ -10,22 +10,40 @@
 
     <h1>Exemplo de Formulário</h1>
 
-    <form action="" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <label for="iestado">Estado: </label>
         <select name="estado" id="iestado"> 
+            <option style="text-align: center;" value="" selected>------ Seu Estado ------</option>
             <optgroup label="Região Sudeste">
                 <option value="MG">Minas Gerais</option>
                 <option value="RJ">Rio de Janeiro</option>
-                <option value="SP" selected>São Paulo</option>
+                <option value="SP">São Paulo</option>
             </optgroup>
 
             <optgroup label="Região Nordeste">
-                <option value="MA">Maranhão</option>
+                <option value="BA">Bahia</option>
                 <option value="RN">Rio Grande do Norte</option>
                 <option value="PE">Pernambuco</option>
             </optgroup>
 
         </select>
+
+        <p>
+            <label for="prof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="dtl_prof">
+
+            <datalist id="dtl_prof">
+                <option>Programador</option>
+                <option>Médico</option>
+                <option>Engenheiro</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+        </p>
 
         <p>
             <input type="submit" value="Enviar">

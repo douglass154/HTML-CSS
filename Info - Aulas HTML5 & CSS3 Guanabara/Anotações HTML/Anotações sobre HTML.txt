@@ -303,7 +303,7 @@ Saiba mais -> https://www.w3schools.com/html/html_table_colspan_rowspan.asp
 
 
 
-                                       ==  AGRUPANDO COLUNAS DAS TABELAS ( colgroup )  ==
+                                       ==  AGRUPANDO COLUNAS DAS TABELAS ( COLGROUP )  ==
 
 
 O elemento HTML <colgroup> define um grupo de colunas dentro de uma tabela. Dentro deste elemento virá o elemento <col>, a quantidade de elementos <col> devem equivaler a quantidade de colunas da tabela, ou adicionar atributos "span" para agrupar 1 elemento <col> em duas colunas.
@@ -335,6 +335,8 @@ Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col
 
                                                             ==  IFRAME ELEMENTS ==
 
+
+• Elemento <iframe>
 
 O elemento HTML <iframe> (ou elemento HTML inline frame) representa um contexto de navegação aninhado, efetivamente incorporando outra página HTML para a página atual.
 
@@ -437,26 +439,52 @@ Saiba mais: https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/r
 
 
 
-                                               ==  FORMULÁRIOS HTML (FORM ELEMENT)  ==
+                                       ==  FORMULÁRIOS HTML INFORMAÇÕES INICIAIS  ==
 
 
 Toda tela de login, toda página de cadastro, todo campo de busca vai precisar obrigatoriamente de um formulário HTML para começar.
 
 Para construir um formulário, vamos utilizar os seguintes elementos <form> , <label> , <input> , <textarea> , e <button> .
 
+
+
+                                          ==  FORMULÁRIOS HTML (FORM ELEMENT)  ==
+
+
 • Elemento <form> :
+
 Todos formulários HTML começam com um elemento <form> . Este elemento define um formulário. É um elemento de container como um elemento <div> ou <p> , mas ele também suporta alguns atributos específicos para configurar a forma como o formulário se comporta. Todos os seus atributos são opcionais, mas é considerada a melhor prática sempre definir pelo menos o atributo action e o atributo method.
 
-	• O atributo ''action'' define o local (uma URL) em que os dados recolhidos do formulário                        devem ser enviados.
+	• O atributo ''action'' define o local (uma URL) em que os dados recolhidos do formulário                        devem ser enviados ( exemplo: cadastro.php , exemplo.js , exemplo.py ).
 
-	• O atributo ''method'' define qual o método HTTP para enviar os dados (ele pode ser "GET" ou 	 "POST" , não sei as diferenças ainda).
+	• O atributo ''method'' define qual o método HTTP para enviar os dados (ele pode ser "GET" ou 	 "POST" ).
 
------>GET:
-condensa todos os dados digitados pelo visitante e envia como parte do endereço acessado.
-Exemplo: htttps://www.google.com.br/exemplo/exemplo2
+-----> GET
+O metodo get condensa todos os dados digitados pelo visitante e envia como parte do endereço acessado. Podemos usar GET em um formulário contanto que: 
 
------>POST:
+• Os dados a serem enviados não sejam sensíveis, como endereços, números de documentos, senhas, etc.
+
+• Tivermos formulários simples e que possam ser compartilhados facilmente através de uma URL. Por exemplo, o Google usa GET no seu formulário, pois você pode enviar um link para qualquer pessoa, já com a ação da busca embutida, como em http://google.com.br/search?q=Gustavo+Guanabara
+
+• Os dados a serem enviados nunca ultrapassem 3000 bytes.
+
+• Não contenha envio de arquivos como imagens (i.e. fotos de perfil), arquivos PDF,
+etc. 
+
+
+-----> POST
 Pega os dados digitados e envia diretamente no corpo da requisição HTTP que será feita quando seu visitante clicar para enviar o formulário. Sendo assim, os dados não irão aparecer na URL.
+o método POST é mais recomendado para casos em que:
+
+• Não queremos que os dados apareçam explicitamente na URL do navegador.
+
+• Capturamos dados como senhas, documentos e outro tipo de dado sensível.
+
+• Precisamos enviar muitos dados (acima de 3000 bytes ~ sem limites).
+
+• Precisamos enviar imagens ou outros tipos de arquivos. 
+
+Saiba mais sobre GET e POST -> https://stackoverflow.com/questions/46585/
 
 
 
@@ -464,6 +492,7 @@ Pega os dados digitados e envia diretamente no corpo da requisição HTTP que se
 
 
 • Elemento <label> :
+
 o elemento HTML <label> faz a a relação entre qual é o objeto do formulário e qual é a etiqueta dele, representa uma legenda para um item em uma interface de usuário. Ele pode estar associado com um elemento de controle, colocando este dentro do elemento label, ou usando o atributo for. Tal controle é chamado o controle etiquetado do elemento etiqueta. Um input pode ser associado a diversas etiquetas (<label>). Seus atributos são :
 
 
@@ -484,6 +513,7 @@ O elemento form que o elemento label está associado a (seu proprietário formul
 
 
 • Elemento <input> :
+
 O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um <input> varia consideravelmente dependendo do valor de seu atributo  '' type ''.
 
 Atributos do elemento <input> :
@@ -520,20 +550,12 @@ Veja todos os types e outros atributos do elemento <input> nesse site:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input
 
 
------> name :
-O nome do controle, que é enviado junto com os dados do formulário.
-
-
------> required :
-Este atributo especifica que o usuário deve preencher o campo com um valor antes de enviar o formulário. Ele não pode ser usado quando o atributo type está definido como hidden, image ou um tipo de botão (submit, reset ou button). As pseudoclasses CSS :optional e :required serão aplicadas ao campo como for apropriado.
-
-
 -----> id :
 Importante para o elemento <label> e para o javascript
 
 
------> size :
-O tamanho inicial do controle. Este valor é em pixels a não ser que o valor do atributo type seja text ou password. Neste caso, este valor é um número inteiro de caracteres. A partir do HTML5, este atributo é aplicado apenas quando o atributo type está definido como text, search, tel, url, email ou password; caso contrário, ele é ignorado. Além disso, o tamanho deve ser maior que zero. Se você não especificar um tamanho, o valor padrão 20 é usado.
+-----> list
+Identifica uma lista de opções pré-definidas de sugestões para o usuário. O valor deve ser o id de um elemento <datalist> no mesmo documento. O navegador mostrará apenas opções que são valores válidos para este elemento. Este atributo é ignorado quando o valor do atributo type é hidden, checkbox, radio, file ou um tipo de botão.
 
 
 -----> maxlength :
@@ -552,20 +574,40 @@ O valor máximo (numérico ou data) para este item, que não deve ser menor que 
 O valor mínimo (númerico ou data) para este item, que não deve ser maior do que seu máximo (atributo max).
 
 
------> step :
-Trabalha junto com os atributos min e max para limitar os incrementos em que valores numéricos ou datas podem ser alterados. Seu valor pode ser any ou um número de ponto flutuante positivo ( exemplo 0.5 ) . Se o valor não for any, o controle aceita somente valores múltiplos valor do incremento maiores que o mínimo.
-
-
------> placeholder :
-Uma dica para o usuário do que ele pode inserir no controle. O texto do atributo não deve conter quebras de linha. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário, ele é ignorado.
+-----> name :
+O nome do controle, que é enviado junto com os dados do formulário.
 
 
 -----> pattern :
 Uma expressão regular usada para validar o valor do controle. O padrão deve casar com o valor completo da entrada, não apenas uma parte. Use o atributo title para descrever o padrão para ajudar o usuário. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário ele é ignorado. A linguagem da expressão regular é a mesma do JavaScript. O padrão não deve estar entre barras. O simbolo ^ define o inicio do value e $ define o final.
 
 
+-----> placeholder :
+Uma dica para o usuário do que ele pode inserir no controle. O texto do atributo não deve conter quebras de linha. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário, ele é ignorado.
+
+
+-----> required :
+Este atributo especifica que o usuário deve preencher o campo com um valor antes de enviar o formulário. Ele não pode ser usado quando o atributo type está definido como hidden, image ou um tipo de botão (submit, reset ou button). As pseudoclasses CSS :optional e :required serão aplicadas ao campo como for apropriado.
+
+
+-----> step :
+Trabalha junto com os atributos min e max para limitar os incrementos em que valores numéricos ou datas podem ser alterados. Seu valor pode ser any ou um número de ponto flutuante positivo ( exemplo 0.5 ) . Se o valor não for any, o controle aceita somente valores múltiplos valor do incremento maiores que o mínimo.
+
+
+-----> size :
+O tamanho inicial do controle. Este valor é em pixels a não ser que o valor do atributo type seja text ou password. Neste caso, este valor é um número inteiro de caracteres. A partir do HTML5, este atributo é aplicado apenas quando o atributo type está definido como text, search, tel, url, email ou password; caso contrário, ele é ignorado. Além disso, o tamanho deve ser maior que zero. Se você não especificar um tamanho, o valor padrão 20 é usado.
+
+
+-----> src
+Se o valor do atributo type for image, este atributo especifica uma URI para a localização de uma imagem a ser exibida no botão gráfico; caso contrário, este atributo é ignorado.
+
+
 -----> value :
 Define o valor inicial do controle. Este atributo é opcional, EXCETO quando o valor do atributo type for radio ou checkbox.
+
+
+-----> width
+Se o valor do atributo type for image, este atributo define a largura da imagem exibida para o botão.
 
 
 
@@ -585,6 +627,7 @@ Saiba mais -> PDF sobre formulários do Curso em Vídeo.
 
 
 • Elemento <select> :
+
 O elemento HTML select (<select>) representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <option>, que podem ser agrupados por elementos <optgroup>. As opções podem ser pré-selecionadas para o usuário. Seus atributos são :
 
 
@@ -623,6 +666,7 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select#d
 
 
 • Elemento <option>
+
 Em um formulário Web, o elemento HTML <option> é usado para criar um controle que representa um item dentro de um elemento HTML5 <select>, <optgroup> ou <datalist>. Seus atributos são :
 
 
@@ -649,6 +693,7 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/option
 
 
 • Elemento <optgroup>
+
 Em um Formulário Web, o elemento HTML <optgroup> cria um agrupamento de opções dentro do elemento <select>. Seus atributos são :
 
 
@@ -663,8 +708,28 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/optgroup
 
 
 
+                                            ==  FORMULÁRIOS HTML (DATALIST ELEMENT)  ==
+
+
+•Elemento <datalist>
+
+O elemento HTML Datalist (<datalist>) contém um conjunto de elementos <option> que representam as opções possíveis para o valor de outros controles.
+Esse elemento não tem nenhum atributo a não ser os global attributes, comuns para todos os elementos.
+
+Depois de colocar uma lista de opções (<option>) dentro da datalist, adicione um id para a tag <datalist>.
+Depois na tag <input> adicione o parâmetro  ''list''  e coloque o id do datalist como valor do parâmetro 
+list.
+
+Saiba mais sobre o parâmetro list na parte de FORMULÁRIOS HTML (INPUT ELEMENT)
+
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/datalist
+
+
+
                                              ==  FIELDSET E LEGEND PARA FORMULÁRIOS  ==
 
+
+• Elemento <fieldset>  e  <legend>
 
 O elemento HTML <fieldset> é usado para agrupar elementos, assim como labels (<label>), dentro de um formulário web.
 Ele tem que ser colocado dentro do elemento <form>. 
