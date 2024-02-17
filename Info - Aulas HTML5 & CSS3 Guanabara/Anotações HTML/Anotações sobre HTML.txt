@@ -726,6 +726,32 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/datalist
 
 
 
+                                             ==  FORMULÁRIOS HTML (OUTPUT ELEMENT)  ==
+
+
+• Elemento <output>
+
+Um recurso que foi adicionado à HTML5 foi o elemento <output>, que pode ser usado para executar tarefas simples e gerar uma saída na tela. 
+
+Essa execução é feita usando a Linguagem de Programação JavaScript e pode ser executada diretamente no atributo "oninput" do formulário. Os dados recebidos no elemento output não serão enviados como os outros dados de outros elementos do formulário.
+
+
+Os atributos da tag <output> são :
+
+-----> for
+Uma lista de IDs de outros elementos, indicando que estes elementos contribuiram com valores de entrada (input) para o cálculo (ou outros afetados).
+
+-----> form
+O elemento form ao qual este elemento está associado (seu "proprietário do formulário"). O valor do atributo deve ser um ID de um elemento form no mesmo documento. Se este atributo não está especificado, o elemento output deve ser descendente de um elemento form. Este atributo permite que você coloque elementos output em qualquer lugar em um documento, não apenas como descendentes de seus elementos form.
+
+-----> name
+O nome do elemento.
+
+
+Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Output
+
+
+
                                              ==  FIELDSET E LEGEND PARA FORMULÁRIOS  ==
 
 
