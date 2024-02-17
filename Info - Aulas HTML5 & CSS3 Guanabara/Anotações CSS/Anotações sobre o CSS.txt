@@ -424,6 +424,8 @@ Representa elementos cuja posição numérica em uma série de irmãos seja ímp
 -----> even
 Representa elementos cuja posição numérica em uma série de irmãos seja par: 2, 4, 6, etc.
 
+-----> 2n , 2n+1 , 2n+alguma coisa  (opções extras)
+
 Saiba mais ->https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child
 
 
