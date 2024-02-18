@@ -477,3 +477,28 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow
 
 
 
+                                                       ==  MODULO 4 HTML E CSS  ==                                                         
+
+
+                                                             ==  MEDIA QUERIES  ==
+
+
+Saibamais -> https://developer.mozilla.org/ptBR/docs/Web/CSS/CSS_media_queries/Using_media_queries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
