@@ -359,6 +359,29 @@ Saiba mais: https://developer.mozilla.org/pt-BR/docs/Web/CSS/display
 
 
 
+                                                  == TUDO SOBRE BOX-SIZING ==
+
+
+A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. É possível usar essa propriedade para emular o comportamento dos navegadores (browsers) que não suportam corretamente a especificação da propriedade CSS box model.
+
+Valores:
+
+-----> border-box
+As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin.
+
+
+-----> content-box
+Essa é o estilo padrão, conforme especificado pela norma CSS. As propriedades width (largura) e height (altura) são medidas incluindo só o conteúdo, mas não o padding, border ou margin. Nota: Padding, border e margin serão fora da box. Exemplo.: Se .box {width: 350px} então se você aplicar uma propriedade {border: 10px solid black;} o resultado renderizado no navegador (browser) será .box {width: 370px;}
+
+
+-----> padding-box
+As propriedades de largura (width) e de altura (height) incluem o tamanho padding size, mas não incluem a propriedade border ou margem.
+
+
+Saiba mais -> https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+
+
+
                                             ==  INFORMAÇÕES SOBRE TABELAS  ==
 
 
@@ -488,9 +511,21 @@ Uma media query consiste de um media type e pelo menos uma expressão que limita
 
 -----> media query = media type + media features
 
-media types são os tipos de midia, exemplo: all, screen, print
 
-media features são características de mídia
+-----> media types 
+são os tipos de midia, eles são:
+
+• all — para todos os tipos de mídia
+ 
+• print — para impressoras
+
+• screen — para telas de computador, tablets e smartphones
+
+• speech — para leitores de tela que “leem” a página em voz alta
+
+
+----> media features 
+são características de mídia
 
 
 Sintaxe :
@@ -550,7 +585,42 @@ https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_q
 
 
 
-                                                         ===  MOBILE FIRST  ===
+                                               ===  TYPICAL DEVICE BREAKPOINTS  ===
+
+
+Breakpoints são, talvez, o termo mais comum que você ouvirá e usará ao falarmos de media queries. Um breakpoint é uma chave para determinar o momento de mudar o layout e adaptá-lo às novas regras dentro das media queries.
+
+Os typicals device breakpoints estão disponíveis para: celular, tablets, Desktops e TVs
+
+
+Exemplo de breakpoints
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+Aqui, o breakpoint é 480px. Agora, a media query sabe quando definir ou sobrescrever a nova classe. Basicamente, se a largura de um dispositivo for inferior a 480px, a classe text será aplicada. Do contrário, isso não acontece.
+
+
+breakpoints comuns em termos de larguras dos dispositivos:
+
+• 600px e abaixo —  pequenas telas
+
+• 601px — 768px (portrait):  tablets e celulares largos 
+
+• 769px — 992px (landscape) :  tablets, laptops
+
+• 993px — 1200px: desktops, telas grandes
+
+• 1201px e acima —  telas muito grandes, TVs
+
+Usar o design responsivo é uma obrigação nos campos de design e desenvolvimento para a web nos dias de hoje. Media queries são uma das partes mais importantes na criação de layouts responsivos.
+
+
+
+                                                           ===  MOBILE FIRST  ===
 
 
 Mobile First é um conceito aplicado em projetos web onde o foco inicial da arquitetura e desenvolvimento é direcionado aos dispositivos móveis.
@@ -575,6 +645,9 @@ Instintivamente (sem ser algo racional) quem está visitando seu site pensa na s
 
 -----> Performance 
 Sites móveis tem que ser mais leves porque muitas pessoas acessam sites com celular no meio da rua com conexões precárias, então se seu site tiver uma boa performance, vai facilitar a entrada dessas pessoas no seu site.
+
+
+Saiba mais -> https://blog.apiki.com/mobile-first-o-conceito-e-sua-aplicabilidade/
 
 
 
