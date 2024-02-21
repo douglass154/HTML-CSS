@@ -486,10 +486,11 @@ Saiba mais -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow
 Uma media query consiste de um media type e pelo menos uma expressão que limita o escopo das folhas de estilo usando media features, tal como largura, altura e cor. Media queries, adicionadas no CSS3, deixam a apresentação do conteúdo adaptado a uma gama especifica de dispositivos não precisando mudar o conteúdo em si.
 
 
-media query = media type + media features
+-----> media query = media type + media features
 
-media type = são os tipos de mídia
-media features = são características de mídia
+media types são os tipos de midia, exemplo: all, screen, print
+
+media features são características de mídia
 
 
 Sintaxe :
@@ -549,13 +550,31 @@ https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_q
 
 
 
+                                                         ===  MOBILE FIRST  ===
 
 
+Mobile First é um conceito aplicado em projetos web onde o foco inicial da arquitetura e desenvolvimento é direcionado aos dispositivos móveis.
+
+O conceito de Mobile First foi elaborado por Luke Wroblewski em 2009 e 2010 no seu blog e no ano seguinte ele publicou através da A Book Apart o livro Mobile First que é uma leitura obrigatória para aqueles que queiram compreender a fundo a técnica e suas aplicabilidades.
 
 
+• Vantagens de se usar Mobile first:
 
 
+-----> Facilidade na divulgação do seu site
+O algoritmo do google valoriza sites produzidos com foco em Mobile First.
 
+
+-----> Melhoria na experiência do usuário
+Quando se pensa primeiro na versão móvel, pensando em deixar o conteúdo o mais leve, rápido e eficiente possível, acabamos melhorando a experiência do usuário e consequentemente o algoritmo do google nos da uma vantagem por conta disso.
+
+
+-----> Aumento de credibilidade
+Instintivamente (sem ser algo racional) quem está visitando seu site pensa na sua marca/site/conteúdo, como algo totalmente profissional, por conta do conteúdo, da leveza e da rapidez do site, isso acaba aumentando a credibilidade do seu site.
+
+
+-----> Performance 
+Sites móveis tem que ser mais leves porque muitas pessoas acessam sites com celular no meio da rua com conexões precárias, então se seu site tiver uma boa performance, vai facilitar a entrada dessas pessoas no seu site.
 
 
 
