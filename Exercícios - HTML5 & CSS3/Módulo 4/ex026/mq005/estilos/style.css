@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: black;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#menu-icon {
+    display: block;
+    background-color: rgba(211, 211, 211, 0.116);
+    color: #fff;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#menu-icon:hover {
+    background-color: #fff;
+    color: #000000;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+}
+
+header menu ul li a {
+    display: block;
+    background-color: rgba(211, 211, 211, 0.116);
+    border-top: 2px solid rgba(211, 211, 211, 0.651);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header menu ul li a:hover {
+    background-color: rgba(211, 211, 211, 0.651);
+}
+
+main {
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    border-radius: 7px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.356);
+}
+
+main h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.1rem;
+    padding: 15px;
+}
+
+main p strong {
+    font-size: 1.1rem;
+}
+
+main p mark {
+    background-color: rgba(128, 0, 128, 0.205);
+}
+
+.texto-marcado {
+    line-height: 25px;
+}
+
+.texto-marcado a {
+    color: black;
+}
+
+.texto-enfase {
+    border-left: 6px solid darkcyan;
+    font-size: 1.3rem;
+    margin-left: 15px;
+    line-height: 25px;
+}
+
