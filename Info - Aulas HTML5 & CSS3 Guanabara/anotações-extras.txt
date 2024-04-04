@@ -7,6 +7,9 @@
 -- Site para achar "media types": https://www.iana.org/assignments/media-types/media-types.xhtml
 
 
+-- -- Site para achar fotos para uso gratuito: https://www.pexels.com
+
+
 -- Para adicionar vídeos externos, use o Youtube ou o Vimeo. no youtube clique em compartilhar>incorporar, e no vimeo clique em campartilhar apenas.
 
 
