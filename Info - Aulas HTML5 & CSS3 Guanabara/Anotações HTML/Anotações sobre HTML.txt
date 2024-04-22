@@ -10,6 +10,9 @@ cria texto marcado (como um marca texto)
   strong = 
 para textos em negrito
 
+  hr =
+representa uma quebra temática entre elementos de nível de parágrafo
+
   p =
 A tag "p" é utilizada para demarcar um parágrafo. O elemento HTML < p > (ou Elemento HTML Parágrafo) representa um parágrafo do texto.
 Posso colocar um espaçamento no ínicio do parágrafo chamado a propriedade CSS "text-indent" que especifica a quantidade de recuo (espaço vazio) que é colocado antes de linhas de texto em um bloco.
