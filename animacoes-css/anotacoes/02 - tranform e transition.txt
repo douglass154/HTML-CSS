@@ -1,0 +1,249 @@
+
+
+                                        ===  PRELIMINARES: TRANSFORM & TRANSITION  ===
+
+
+A propriedade "transform" Define qual alteração será feita no elemento. Pode-se usar mais de um efeito separado-os por um espaço. 
+Tais efeitos serão aplicados um após o outro, na ordem determinada no código.
+
+_________________
+
+Possibilidades para se utilizar junto com o transform:
+
+---> transform: translate();
+A função CSS translate() reposiciona um elemento na direção horizontal e/ou vertical. O seu resultado é um tipo de dado.
+
+Esta transformação é caracterizada por um vetor bidimensional. Suas coordenadas definem o quanto o elemento se move em cada direção.
+
+::: Sintaxe:
+/* Valores <length-percentage> únicos */
+transform: translate(200px);
+transform: translate(50%);
+
+/* Valores <length-percentage> duplos */
+transform: translate(100px, 200px);
+transform: translate(100px, 50%);
+transform: translate(30%, 200px);
+transform: translate(-30%, -50%);
+
+__________________
+
+---> transform: scale();
+A função CSS scale() define uma transformação que redimensiona um elemento no plano 2D. Como o redimensionamento é definido por um vetor, ele pode transformar as dimensões verticais e horizontais em escalas diferentes.
+
+::: Sintaxe:
+A função scale() é especificada com um ou dois valores, que representam a quantidade de redimensionamento a ser aplicada em cada direção.
+
+scale(sx)
+scale(sx, sy)
+
+---> sx (eixo X)
+Um <number> representando a abscissa do vetor de redimensionamento.
+
+---> sy (eixo Y)
+Um <number> representando a ordenada do vetor de redimensionamento. Se não for definida, seu valor padrão é sx, resultando em um redimensionamento uniforme que preserva a proporção do elemento.
+
+___________________
+
+---> transform: rotate();
+A função CSS rotate() define uma transformação que gira um elemento em torno de um ponto fixo no plano 2D, sem deformá-lo.
+O eixo de rotação passa por uma origem, definido pela propriedade CSS transform-origin.
+
+::: Sintaxe:
+A quantidade de rotação criada por rotate() é especificado por um <angle>. Se positivo, o movimento será no sentido horário; Se negativo, ela será no sentido anti-horário. Uma rotação de 180° é chamada de point reflection (reflexão do ponto).
+
+rotate(a)
+rotate(90deg);
+
+Valores:
+
+---> a
+É um <angle> representando o ângulo da rotação. Um ângulo positivo indica uma rotação no sentido horário, um ângulo negativo no sentido anti-horário.
+
+___________________
+
+---> transform: skew();
+A função CSS skew() define uma transformação que distorce um elemento no plano 2D.
+
+::: Sintaxe:
+A skew()função é especificada com um ou dois valores, que representam a quantidade de inclinação a ser aplicada em cada direção. Se você especificar apenas um valor, ele será usado para o eixo x e não haverá distorção no eixo y.
+
+skew(ax)
+skew(ax, ay)
+skew(15deg, 15deg)
+
+::: Valores:
+---> ax:
+É uma <angle> representação do ângulo a ser usado para distorcer o elemento ao longo do eixo x.
+
+---> ay:
+É uma <angle> representação do ângulo a ser usado para distorcer o elemento ao longo do eixo y. Se não for definido, seu valor padrão será 0, resultando em uma inclinação puramente horizontal.
+
+
+
+                                                            ===  TRANSITION  ===
+
+
+A propriedade de CSS transition é uma propriedade abreviada para transition-property, transition-duration, transition-timing-function e transition-delay.
+
+Ela permite definir a transição entre dois estados de um elemento. Estados diferentes podem ser definidos usando pseudo-classes tais como :hover ou :active; ou dinamicamente, usando javascript.
+
+::: Syntax:
+
+/* Apply to 1 property */
+/* property name | duration */
+transition: margin-left 4s;
+
+/* property name | duration | delay */
+transition: margin-left 4s 1s;
+
+/* property name | duration | timing function | delay */
+transition: margin-left 4s ease-in-out 1s;
+
+/* Apply to 2 properties */
+transition:
+  margin-left 4s,
+  color 1s;
+
+/* Apply to all changed properties */
+transition: all 0.5s ease-out;
+
+/* Global values */
+transition: inherit;
+transition: initial;
+transition: unset;
+
+_____________________
+
+---> transition-property:
+
+A propriedade CSS transition-property define as propriedades CSS às quais um efeito de transição deve ser aplicado.
+
+Se você especificar uma propriedade abreviada (por exemplo, background), todas as suas subpropriedades extensas que podem ser animadas serão.
+
+
+::: Sintaxe:
+
+/* Keyword values */
+transition-property: none;
+transition-property: all;
+
+/* <custom-ident> values */
+transition-property: test_05;
+transition-property: -specific;
+transition-property: sliding-vertically;
+
+/* Multiple values */
+transition-property: test1, animation4;
+transition-property: all, height, color;
+transition-property:
+  all,
+  -moz-specific,
+  sliding;
+
+/* Global values */
+transition-property: inherit;
+transition-property: initial;
+transition-property: revert;
+transition-property: revert-layer;
+transition-property: unset;
+
+
+::: Valores:
+---> none:
+Nenhuma propriedade fará a transição.
+
+---> all:
+Todas as propriedades que podem fazer a transição o farão.
+
+---> <custom-ident>:
+Uma string que identifica a propriedade à qual um efeito de transição deve ser aplicado quando seu valor muda.
+
+_____________________
+
+---> transition-duration:
+
+A propriedade CSS transition-duration define o tempo que uma animação de transição deve levar para ser concluída. Por padrão, o valor é 0s, o que significa que nenhuma animação ocorrerá.
+
+::: Sintaxe:
+
+/* <time> values */
+transition-duration: 6s;
+transition-duration: 120ms;
+transition-duration: 1s, 15s;
+transition-duration: 10s, 30s, 230ms;
+
+/* Global values */
+transition-duration: inherit;
+transition-duration: initial;
+transition-duration: revert;
+transition-duration: revert-layer;
+transition-duration: unset;
+
+::: Valores:
+
+<time>
+<time> É uma indicação da quantidade de tempo que a transição do valor antigo de uma propriedade para o novo valor deve levar. Um tempo de "0 seg" indica que nenhuma transição acontecerá, ou seja, a troca entre os dois estados será instantânea. Um valor negativo para o tempo torna a declaração inválida.
+
+_____________________
+
+---> transition-time-function:
+
+A propriedade CSS transition-timing-function é usada para descrever como os valores intermediários das propriedades CSS sendo afetados por um efeito de transição são calculados.
+
+Em essência isso permite você estabelecer uma curva de aceleração, para que então a velocidade da transição possa variar durante sua duração.
+
+Essa curva de aceleração é definida usando <timing-function> para cada propriedade a ser transicionada.
+
+
+::: Sintaxe:
+
+/* Keyword values */
+transition-timing-function: ease;
+transition-timing-function: ease-in;
+transition-timing-function: ease-out;
+transition-timing-function: ease-in-out;
+transition-timing-function: linear;
+transition-timing-function: step-start;
+transition-timing-function: step-end;
+
+/* Function values */
+transition-timing-function: steps(4, end);
+transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+transition-timing-function: frames(10);
+
+/* Multiple timing functions */
+transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+
+/* Global values */
+transition-timing-function: inherit;
+transition-timing-function: initial;
+transition-timing-function: unset;
+
+_____________________
+
+---> transition-delay:
+
+A propriedade CSS transition-delay (atraso de transição) determina o tempo de duração da espera antes de iniciar um efeito de transição (transition effect) quando seu valor muda.
+
+Essa espera, ou atraso de transição, pode ser zero, positiva ou negativa:
+
+• Um valor de 0s (ou 0ms) iniciará o efeito de transição imediatamente.
+• Um valor positivo atrasará o inicio do efeito de transição de acordo com o tempo estabelecido.
+• Um valor negativo iniciará o efeito de transição imediatamente e parcialmente durante o efeito. Em    outras palavras, o efeito será animado como se já tivesse sido executado pelo tempo estipulado.
+
+
+::: Syntax:
+/* Valores de Tempo <time>  */
+transition-delay: 3s;
+transition-delay: 2s, 4ms;
+
+/* Valores Globais */
+transition-delay: inherit;
+transition-delay: initial;
+transition-delay: unset;
+
+::: Valores:
+---> <time>:
+Indica a quantidade de tempo de espera entre um valor de propriedade e o inicio do efeito de transição(transition effect).
+

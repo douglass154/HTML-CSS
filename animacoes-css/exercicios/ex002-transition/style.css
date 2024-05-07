@@ -1,0 +1,19 @@
+body {
+    margin: 25px;
+}
+
+.box {
+    background-color: #157bad;
+    height: 300px;
+    width: 300px;
+
+    transition-property: background-color, border-radius;
+    transition-duration: 2s, 1.5s;
+    transition-timing-function: cubic-bezier(.15, .89, .85, .26);
+    transition-delay: 250ms;
+}
+
+.box:hover {
+    background-color: #ec5840;
+    border-radius: 50%;
+}

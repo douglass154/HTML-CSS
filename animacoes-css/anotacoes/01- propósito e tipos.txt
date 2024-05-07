@@ -1,0 +1,46 @@
+
+                                                  ===  O PRÓPOSITO DA ANIMAÇÃO  ===
+
+
+As animações desempenham um crítico na melhoria de UX, pois ajudam a fornecer feedbacks visuais muito melhores, tornando as interações muito mais úteis e eficientes, até memoráveis.
+
+Animações precisam ser usadas com sabedoria, ou você pode criar uma página que causa distrações ao invés de prover interações.
+
+O objetivo das animações é servir como um auxilidor e aprimorador, e não como um obstáculo ao se acessar o site ou app. 
+
+Objetivamente, animações de interface podem trazer a um projeto:
+Informação, Hierarquia, Foco, Feedback, Marca e etc...
+
+
+
+                                          ===  TIPOS DE ANIMAÇÕES DE INTERFACES  ===
+
+
+É possível categorizar animações de interfaces em três tipos: Funcional, matérial e encatador.
+
+A animação pode ajudar a alcançar metas de UX e fazer a UI ficar mais consistente e real, tudo isso enquanto impulsionado uma ação de um serviço ou produto por inteiro.
+
+_______________
+
+---> Animação Funcional:
+• Otimiza a experiência percebida, fazendo-a parecer melhor e mais abrangente;
+• Guia a antenção das pessoas a pontos planejados;
+• Fornece Feedback visual e faz a preparação para etapas futuras;
+
+
+---> Animação Matérial:
+• Controi a animação através de um modelo consistente de UI;
+• Define as relações espaciais entre telas e elementos, sua altura, elevação, peso, velocidade, etc, são     relativas;
+
+
+---> Animação Encantador:
+• Adiciona humanidade & diversão;
+• Traz sensação de algo único e memorável;
+• Entretem os visitantes e os ajuda a se relacionar com o site ou app;
+
+
+
+
+
+
+
