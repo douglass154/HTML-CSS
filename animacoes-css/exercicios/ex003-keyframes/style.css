@@ -1,0 +1,45 @@
+
+@keyframes myanimation {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+    
+    25% {
+        left: 620px;
+        top: 0;
+        background-color: blue;
+    }
+
+    50% {
+        left: 620px;
+        top: 690px;
+        background-color: purple;
+    }
+
+    75% {
+        left: 0;
+        top: 690px;
+        background-color: green;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+body {
+    margin: 25px;
+    min-width: 100vh;
+}
+
+.container {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    position: relative;
+
+    animation: myanimation 5s ease 250ms infinite;
+}

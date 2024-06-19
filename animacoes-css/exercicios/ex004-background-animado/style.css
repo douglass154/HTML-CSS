@@ -1,0 +1,32 @@
+
+@keyframes gradient {
+    from {
+        background-position: 0 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+    background-size: 300% 300%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: gradient 5s ease infinite alternate;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}

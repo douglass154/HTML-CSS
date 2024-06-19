@@ -1,0 +1,237 @@
+
+
+                                                                ===  KEYFRAMES  ===
+
+
+A regra CSS @keyframes controla as etapas intermediárias em uma sequência de animação CSS definindo estilos para quadros-chave (ou pontos de referência) ao longo da sequência de animação. Isto dá mais controle sobre as etapas intermediárias da sequência de animação do que sobre as transições.
+
+
+>>> Sintaxe:
+@keyframes slidein {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+>>> Valores:
+
+---> <custom-ident>:
+Um nome que identifica a lista de quadros-chave. Deve corresponder à produção do identificador na sintaxe CSS.
+
+---> from:
+Um deslocamento inicial de 0%.
+
+---> to:
+Um deslocamento final de 100%.
+
+---> <percentage>:
+Uma porcentagem do tempo durante a sequência de animação em que o quadro-chave especificado deve ocorrer.
+
+---> <timeline-range-name> <percentage>
+Uma porcentagem do tempo especificado animation-rangeem que o quadro-chave especificado deve ocorrer. Consulte Animações CSS orientadas por rolagem para obter mais informações sobre os tipos de animações que usam intervalos nomeados da linha do tempo.
+
+
+
+                                                ===  PROPRIEDADES DE ANIMATION  ===
+
+
+Shorthand para a propriedade animation (na ordem):
+animation: name  |  duration  |  time-function |  delay  |  iteration-count  |  direction  |  fill-mode  |  play-state;
+
+
+
+---> animation-name:
+A propriedade animation-name especifica um nome para a animação @keyframes (tem que ser o mesmo nome definido para @keyframes).
+
+_________________
+
+---> animation-duration:
+A propriedade animation-duration define quanto tempo uma animação deve levar para completar um ciclo.
+
+
+>>> Sintaxe:
+/* Single animation */
+animation-duration: auto;  /* Default */
+animation-duration: 6s;
+animation-duration: 120ms;
+
+/* Multiple animations */
+animation-duration: 1.64s, 15.22s;
+animation-duration: 10s, 35s, 230ms;
+
+________________
+
+---> animation-timing-function:
+O propriedade animation-timing-function especifica a curva de velocidade de uma animação.
+
+A curva de velocidade define o TEMPO que uma animação usa para mudar de um conjunto de estilos CSS para outro.
+
+A curva de velocidade é usada para fazer as alterações suavemente.
+Valor padrão: ease
+
+>>> Sintaxe:
+/* Keyword values */
+animation-timing-function: ease;
+animation-timing-function: ease-in;
+animation-timing-function: ease-out;
+animation-timing-function: ease-in-out;
+animation-timing-function: linear;
+animation-timing-function: step-start;
+animation-timing-function: step-end;
+
+/* Function values */
+animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+animation-timing-function: steps(4, end);
+
+/* Steps Function keywords */
+animation-timing-function: steps(4, jump-start);
+animation-timing-function: steps(10, jump-end);
+animation-timing-function: steps(20, jump-none);
+animation-timing-function: steps(5, jump-both);
+animation-timing-function: steps(6, start);
+animation-timing-function: steps(8, end);
+
+/* Multiple animations */
+animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+
+/* Global values */
+animation-timing-function: inherit;
+animation-timing-function: initial;
+animation-timing-function: revert;
+animation-timing-function: revert-layer;
+animation-timing-function: unset;
+
+________________
+
+---> animation-delay:
+A propriedade animation-delay especifica um atraso para o início de uma animação.
+O valor do atraso da animação é definido em segundos (s) ou milissegundos (ms).
+
+
+>>> Sintaxe:
+/* Uma animação */
+animation-delay: 3s;
+animation-delay: 0s;
+animation-delay: -1500ms;
+
+/* Várias animações */
+animation-delay: 2.1s, 480ms;
+
+_______________
+
+---> animation-iteration-count:
+A propriedade animation-iteration-count especifica o número de vezes que uma animação deve ser reproduzida.
+
+Valor padrão: 1
+
+
+>>> Sintaxe:
+/* Keyword value */
+animation-iteration-count: infinite;
+
+/* <number> values */
+animation-iteration-count: 3;
+animation-iteration-count: 2.4;
+
+/* Multiple values */
+animation-iteration-count: 2, 0, infinite;
+
+/* Global values */
+animation-iteration-count: inherit;
+animation-iteration-count: initial;
+animation-iteration-count: revert;
+animation-iteration-count: revert-layer;
+animation-iteration-count: unset;
+
+_______________
+
+---> animation-direction:
+A propriedade animation-direction define se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.
+
+
+>>> Sintaxe:
+/* Single animation */
+animation-direction: normal;
+animation-direction: reverse;
+animation-direction: alternate;
+animation-direction: alternate-reverse;
+
+/* Multiple animations */
+animation-direction: normal, reverse;
+animation-direction: alternate, reverse, normal;
+
+/* Global values */
+animation-direction: inherit;
+animation-direction: initial;
+animation-direction: revert;
+animation-direction: revert-layer;
+animation-direction: unset;
+
+_______________
+
+---> animation-fill-mode:
+
+A animation-fill-modepropriedade especifica um estilo para o elemento quando a animação não está sendo reproduzida (antes de começar, depois de terminar ou ambos).
+
+As animações CSS não afetam o elemento antes da reprodução do primeiro quadro-chave ou após a reprodução do último quadro-chave. A animation-fill-modepropriedade pode substituir esse comportamento.
+
+
+>>> Syntax:
+/* Single animation */
+animation-fill-mode: none;
+animation-fill-mode: forwards;
+animation-fill-mode: backwards;
+animation-fill-mode: both;
+
+/* Multiple animations */
+animation-fill-mode: none, backwards;
+animation-fill-mode: both, forwards, none;
+
+/* Global values */
+animation-fill-mode: inherit;
+animation-fill-mode: initial;
+animation-fill-mode: revert;
+animation-fill-mode: revert-layer;
+animation-fill-mode: unset;
+
+_______________
+
+---> animation-play-state:
+A animation-play-statepropriedade especifica se a animação está em execução ou pausada.
+Nota: Use esta propriedade em JavaScript para pausar uma animação no meio de um ciclo.
+
+Retomar uma animação pausada iniciará a animação de onde parou no momento em que foi pausada, em vez de recomeçar do início da sequência de animação.
+
+
+>>> Sintaxe:
+/* Single animation */
+animation-play-state: running;
+animation-play-state: paused;
+
+/* Multiple animations */
+animation-play-state: paused, running, running;
+
+/* Global values */
+animation-play-state: inherit;
+animation-play-state: initial;
+animation-play-state: revert;
+animation-play-state: revert-layer;
+animation-play-state: unset;
+
+
+>>> Valores:
+---> running:
+A animação está sendo reproduzida no momento .
+
+---> paused:
+A animação está pausada no momento .
+
+_______________
+
+
+

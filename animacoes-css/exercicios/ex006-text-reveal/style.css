@@ -1,0 +1,62 @@
+
+@keyframes text-reveal {
+    from {
+        transform: translate(-101%);
+    }
+
+    to {
+        transform: translate(101%);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.text-reveal {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-text::after {
+    background-color: #157bad;
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    animation: text-reveal 2s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+}
+
+h1 {
+    font-size: 3rem;
+    color: black;
+    opacity: 0;
+
+    animation: fade 1ms linear 1s forwards;
+}
